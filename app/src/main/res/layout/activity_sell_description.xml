@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_sell.SellDescriptionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/AppTheme.ToolbarWhite">
+
+        <CustomComponents.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Deskripsi Produk" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_vertical_xlarge"
+        android:paddingBottom="@dimen/padding_vertical_xlarge"
+        android:paddingLeft="@dimen/padding_horizontal_large"
+        android:paddingRight="@dimen/padding_horizontal_large">
+
+        <CustomComponents.TextViewH1
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuliskan deskripsi barang jualan kamu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_vertical_xlarge"
+            android:layout_marginTop="@dimen/margin_vertical_xlarge"
+            android:orientation="vertical">
+
+            <CustomComponents.TextViewH4
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Barang" />
+
+            <CustomComponents.TextViewSubText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuliskan nama barang yang dijual" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <CustomComponents.TextViewH4
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori Barang" />
+
+            <CustomComponents.TextViewSubText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atur kategori barang yang dijual" />
+        </LinearLayout>
+
+
+        <CustomComponents.EditText
+            android:id="@+id/mDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tulis deskripsi barang disini"
+            android:singleLine="true"
+            android:inputType="textPersonName" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

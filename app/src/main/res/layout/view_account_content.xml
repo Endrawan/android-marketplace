@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sell_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_vertical_normal"
+        android:paddingTop="@dimen/padding_vertical_normal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/margin_horizontal_normal"
+            android:layout_marginRight="@dimen/margin_horizontal_normal"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/sell_item" />
+
+        <CustomComponents.TextView
+            style="@style/AppTheme.TextViewH3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Jual Barang" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cBackgroundGrey" />
+
+    <LinearLayout
+        android:id="@+id/view_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_vertical_normal"
+        android:paddingTop="@dimen/padding_vertical_normal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/margin_horizontal_normal"
+            android:layout_marginRight="@dimen/margin_horizontal_normal"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/products" />
+
+        <CustomComponents.TextView
+            style="@style/AppTheme.TextViewH3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Barang Jualanmu" />
+    </LinearLayout>
+
+</LinearLayout>

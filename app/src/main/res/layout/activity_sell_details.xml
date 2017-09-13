@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_sell.SellDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/AppTheme.ToolbarWhite">
+
+        <CustomComponents.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Detail Produk" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_vertical_xlarge"
+                android:paddingLeft="@dimen/padding_horizontal_large"
+                android:paddingRight="@dimen/padding_horizontal_large"
+                android:paddingTop="@dimen/padding_vertical_xlarge">
+
+                <CustomComponents.TextViewH1
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atur detail barang jualan kamu" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_vertical_normal">
+
+                    <CustomComponents.TextViewH4
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PERKIRAAN BERAT" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CustomComponents.EditText
+                            android:id="@+id/mWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:paddingRight="60dp"
+                            android:singleLine="true">
+
+                            <requestFocus />
+                        </CustomComponents.EditText>
+
+                        <CustomComponents.TextViewH3
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:paddingRight="8dp"
+                            android:text="Gram" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_vertical_normal">
+
+                    <CustomComponents.TextViewH4
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STOK BARANG" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CustomComponents.EditText
+                            android:id="@+id/mQuantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="0"
+                            android:inputType="numberSigned"
+                            android:paddingRight="60dp"
+                            android:singleLine="true"/>
+
+                        <CustomComponents.TextViewH3
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:paddingRight="8dp"
+                            android:text="Buah" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CustomComponents.TextViewH4
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HARGA BARANG SATUAN" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CustomComponents.EditText
+                            android:id="@+id/mPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="0,-"
+                            android:inputType="numberSigned"
+                            android:paddingLeft="32dp"
+                            android:singleLine="true"/>
+
+                        <CustomComponents.TextViewH3
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|start"
+                            android:paddingLeft="4dp"
+                            android:text="Rp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cBackgroundGrey"/>
+
+            <RelativeLayout
+                android:id="@+id/mNewStuffLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cBackgroundGrey"
+                android:paddingTop="@dimen/padding_vertical_normal"
+                android:paddingBottom="@dimen/padding_vertical_normal"
+                android:paddingRight="@dimen/padding_horizontal_large"
+                android:paddingLeft="@dimen/padding_horizontal_large">
+
+                <CustomComponents.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="Barang Baru" />
+
+                <CheckBox
+                    android:id="@+id/newStuff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cBackgroundGrey"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/home"
+        id="@+id/home"
+        title="Beranda"
+        inActiveColor="#B4BECC" />
+    <tab
+        icon="@drawable/categories"
+        id="@+id/categories"
+        title="Kategori"
+        inActiveColor="#B4BECC" />
+    <tab
+        icon="@drawable/cart"
+        id="@+id/cart"
+        title="Keranjang"
+        inActiveColor="#B4BECC" />
+    <tab
+        icon="@drawable/account"
+        id="@+id/account"
+        title="Akun"
+        inActiveColor="#B4BECC" />
+</tabs>
+

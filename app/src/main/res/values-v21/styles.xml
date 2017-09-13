@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="actionMenuTextColor">@color/cWhite</item>
+
+        <!--  Action Mode Style -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_chevron_left_black_24dp</item>
+        <item name="actionModeCloseButtonStyle">@style/myclosebutton</item>
+        <item name="actionModeStyle">@style/AppTheme.ActionMode</item>
+    </style>
+
+    <!-- Button Section -->
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">12sp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:background">@drawable/button_ui</item>
+        <item name="android:textColor">@color/cWhite</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="AppTheme.Button.White" parent="AppTheme.Button">
+        <item name="android:background">@drawable/button_ui_white</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:paddingRight">@dimen/padding_horizontal_large</item>
+        <item name="android:paddingLeft">@dimen/padding_horizontal_large</item>
+        <item name="android:paddingTop">@dimen/padding_vertical_small</item>
+        <item name="android:paddingBottom">@dimen/padding_vertical_small</item>
+    </style>
+
+</resources>

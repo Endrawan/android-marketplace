@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cWhite"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_normal">
+
+        <ImageView
+            android:id="@+id/imageProduct"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/content_description"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="@dimen/margin_horizontal_small"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_horizontal_small"
+            android:paddingLeft="@dimen/margin_horizontal_normal"
+            android:paddingRight="@dimen/margin_horizontal_normal"
+            android:paddingTop="@dimen/padding_horizontal_small">
+
+            <CustomComponents.TextView
+                android:id="@+id/nameProduct"
+                style="@style/AppTheme.TextViewH3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Aashish Fabrics Cotton Regular Tops" />
+
+            <CustomComponents.TextViewSemiBold
+                android:id="@+id/priceProduct"
+                style="@style/AppTheme.TextViewH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_vertical_small"
+                tools:text="Rp 20.000,-" />
+
+            <CustomComponents.TextView
+                android:id="@+id/quantityProduct"
+                style="@style/AppTheme.TextViewH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Total Barang: 2" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/margin_horizontal_normal"
+        android:layout_marginStart="@dimen/margin_horizontal_normal"
+        android:layout_height="1dp"
+        android:background="@color/cBorderBottom"/>
+
+    <LinearLayout
+        android:id="@+id/shipmentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_normal">
+
+        <CustomComponents.TextView
+            android:id="@+id/shipmentLabel"
+            style="@style/AppTheme.TextViewH4.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Media Pengiriman" />
+
+        <CustomComponents.TextViewSemiBold
+            android:id="@+id/shipmentVal"
+            style="@style/AppTheme.TextViewH3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_vertical_xsmall"
+            android:singleLine="true"
+            android:text="Klik Untuk Memilih" />
+    </LinearLayout>
+
+</LinearLayout>

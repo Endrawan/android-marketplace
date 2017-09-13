@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="24dp"
+                android:right="24dp"
+                android:top="24dp"
+                android:bottom="24dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_sell.SellNameActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/AppTheme.ToolbarWhite">
+
+        <CustomComponents.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nama Produk" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="@dimen/padding_vertical_xlarge"
+        android:paddingBottom="@dimen/padding_vertical_xlarge"
+        android:paddingLeft="@dimen/padding_horizontal_large"
+        android:paddingRight="@dimen/padding_horizontal_large">
+
+        <CustomComponents.TextViewH1
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Masukkan nama jualan kamu" />
+
+        <View
+            android:id="@+id/justMargin"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <CustomComponents.TextViewSubTitle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/justMargin"
+            android:text="Nama barang ini akan muncul di daftar barang jualan kamu." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <CustomComponents.TextViewH4
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAMA BARANG" />
+
+            <CustomComponents.EditText
+                android:id="@+id/mProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contoh, IPhone 5S Gold 128GB"
+                android:inputType="textPersonName">
+                <requestFocus />
+            </CustomComponents.EditText>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_vertical_small"
+    android:background="@drawable/layout_shadowed"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_horizontal_normal"
+    android:paddingRight="@dimen/padding_horizontal_normal">
+
+    <CustomComponents.TextView
+        android:id="@+id/productName"
+        style="@style/AppTheme.TextViewH3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_vertical_xsmall"
+        android:paddingTop="@dimen/padding_vertical_small"
+        android:text="We got bitches everybody!!" />
+
+    <CustomComponents.TextViewSemiBold
+        android:id="@+id/productPrice"
+        style="@style/AppTheme.CurrencyTV.H3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_vertical_small"
+        android:paddingTop="@dimen/padding_vertical_xsmall"
+        android:text="Rp 20.000,-" />
+</LinearLayout>

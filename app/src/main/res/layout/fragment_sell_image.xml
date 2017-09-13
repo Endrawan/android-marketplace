@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_vertical_xlarge"
+    android:paddingLeft="@dimen/padding_horizontal_large"
+    android:paddingRight="@dimen/padding_horizontal_large"
+    android:paddingTop="@dimen/padding_vertical_xlarge">
+
+    <CustomComponents.TextViewH1
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload gambar jualan kamu" />
+
+    <View
+        android:id="@+id/justMargin"
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <CustomComponents.TextViewSubTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ukuran foto minimal 300x300px, dengan format JPG, JPEG, PNG, BMP, dan GIF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_grid_ratio"
+        android:layout_marginBottom="@dimen/margin_vertical_xxlarge"
+        android:layout_marginTop="@dimen/margin_vertical_xxlarge"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CustomComponents.TextViewH4
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gambar Utama" />
+
+            <FrameLayout
+                style="@style/AppTheme.ImageViewSellMain"
+                android:layout_marginBottom="@dimen/margin_vertical_xsmall"
+                android:layout_marginTop="@dimen/margin_vertical_xsmall">
+
+                <ImageView
+                    android:id="@+id/mainImage"
+                    style="@style/AppTheme.ImageViewSellMain"
+                    android:contentDescription="@string/content_description" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/mainLoading"
+                    android:layout_width="@dimen/indicator_normal_size"
+                    android:layout_height="@dimen/indicator_normal_size"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    app:indicatorColor="@color/colorPrimary"
+                    app:indicatorName="BallClipRotateIndicator" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/padding_horizontal_xlarge"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CustomComponents.TextViewH4
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gambar Lainnya" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:useDefaultMargins="true">
+
+                <FrameLayout style="@style/AppTheme.ImageViewSell">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        style="@style/AppTheme.ImageViewSell"
+                        android:contentDescription="@string/content_description" />
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:id="@+id/loading1"
+                        android:layout_width="@dimen/indicator_small_size"
+                        android:layout_height="@dimen/indicator_small_size"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        app:indicatorColor="@color/colorPrimary"
+                        app:indicatorName="BallClipRotateIndicator" />
+                </FrameLayout>
+
+
+                <FrameLayout style="@style/AppTheme.ImageViewSell">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        style="@style/AppTheme.ImageViewSell"
+                        android:contentDescription="@string/content_description" />
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:id="@+id/loading2"
+                        android:layout_width="@dimen/indicator_small_size"
+                        android:layout_height="@dimen/indicator_small_size"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        app:indicatorColor="@color/colorPrimary"
+                        app:indicatorName="BallClipRotateIndicator" />
+                </FrameLayout>
+
+
+                <FrameLayout style="@style/AppTheme.ImageViewSell">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        style="@style/AppTheme.ImageViewSell"
+                        android:contentDescription="@string/content_description" />
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:id="@+id/loading3"
+                        android:layout_width="@dimen/indicator_small_size"
+                        android:layout_height="@dimen/indicator_small_size"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        app:indicatorColor="@color/colorPrimary"
+                        app:indicatorName="BallClipRotateIndicator" />
+                </FrameLayout>
+
+
+                <FrameLayout style="@style/AppTheme.ImageViewSell">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        style="@style/AppTheme.ImageViewSell"
+                        android:contentDescription="@string/content_description" />
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:id="@+id/loading4"
+                        android:layout_width="@dimen/indicator_small_size"
+                        android:layout_height="@dimen/indicator_small_size"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        app:indicatorColor="@color/colorPrimary"
+                        app:indicatorName="BallClipRotateIndicator" />
+                </FrameLayout>
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <CustomComponents.Button
+            android:id="@+id/mTakePhoto"
+            style="@style/AppTheme.ButtonUINormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Ambil dari Kamera" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_normal" />
+
+        <CustomComponents.Button
+            android:id="@+id/mUploadGallery"
+            style="@style/AppTheme.ButtonUINormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Upload dari Galeri" />
+    </LinearLayout>
+</LinearLayout>

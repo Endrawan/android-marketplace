@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_vertical_normal"
+        android:paddingLeft="@dimen/padding_horizontal_normal"
+        android:paddingRight="@dimen/padding_horizontal_normal"
+        android:paddingTop="@dimen/padding_vertical_normal">
+
+        <CustomComponents.TextView
+            android:id="@+id/primaryAddress"
+            style="@style/AppTheme.TextViewH5.Grey"
+            android:text="Alamat Utama"
+            android:layout_marginBottom="@dimen/margin_vertical_normal"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CustomComponents.TextViewSemiBold
+            android:id="@+id/name"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            tools:text="Rumah"/>
+
+        <CustomComponents.TextViewSemiBold
+            android:id="@+id/receiver"
+            style="@style/AppTheme.TextViewH5"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_vertical_small"
+            android:layout_marginBottom="@dimen/margin_vertical_small"
+            tools:text="Nadi Endrawan"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/address"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Komplek Nusa Persada Blok H18 RT 03 RW 13"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/district"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Cimahi Selatan, Cimahi"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/province"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Jawa Barat, 40532"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/phone"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_vertical_small"
+            android:layout_marginBottom="@dimen/margin_vertical_small"
+            tools:text="+6289652001107"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CustomComponents.Button
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"/>
+            <CustomComponents.Button
+                android:id="@+id/setPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Utama"/>
+            <CustomComponents.Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hapus"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cBackgroundGrey" />
+</LinearLayout>

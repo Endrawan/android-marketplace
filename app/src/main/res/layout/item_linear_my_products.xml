@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_vertical_normal"
+        android:paddingLeft="@dimen/padding_horizontal_normal"
+        android:paddingRight="@dimen/padding_horizontal_normal"
+        android:paddingTop="@dimen/padding_vertical_normal">
+
+        <ImageView
+            android:id="@+id/mProductImage"
+            style="@style/AppTheme.ImageView"
+            android:layout_width="@dimen/size_image_large"
+            android:layout_height="@dimen/size_image_large"
+            android:contentDescription="@string/content_description" />
+
+        <View
+            android:id="@+id/space"
+            android:layout_width="@dimen/padding_horizontal_normal"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <CustomComponents.TextViewSemiBold
+                android:id="@+id/mName"
+                style="@style/AppTheme.TextViewH2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Nama" />
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_vertical_xxsmall" />-->
+
+            <CustomComponents.TextViewSubText
+                android:id="@+id/mCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="kategori" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_vertical_xsmall" />
+
+            <CustomComponents.TextViewSemiBold
+                android:id="@+id/mPrice"
+                style="@style/AppTheme.CurrencyTV.H4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="harga" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cBackgroundGrey" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="@dimen/size_image_large"
+            android:layout_height="@dimen/size_image_large"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/user" />
+
+        <CustomComponents.TextViewSemiBold
+            android:id="@+id/profileName"
+            style="@style/AppTheme.TextViewH1.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_vertical_small"
+            android:text="Nama Anda"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/profilBio"
+            style="@style/AppTheme.TextViewH4.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak ada bio" />
+    </LinearLayout>
+
+    <!--<ImageView
+        android:id="@+id/optionsPanel"
+        android:layout_width="28dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/content_description"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/more"
+        android:tint="@color/cWhite" />-->
+</RelativeLayout>

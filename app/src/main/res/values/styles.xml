@@ -1,0 +1,179 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="android:windowBackground">@color/cBackgroundGrey</item>-->
+
+        <!--  Action Mode Style -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_chevron_left_black_24dp</item>
+        <item name="actionModeCloseButtonStyle">@style/myclosebutton</item>
+        <item name="actionModeStyle">@style/AppTheme.ActionMode</item>
+        <item name="actionMenuTextColor">@color/cWhite</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Toolbar" parent="AppTheme">
+        <item name="android:homeAsUpIndicator">@drawable/username</item>
+    </style>
+
+    <style name="AppTheme.ToolbarWhite" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:homeAsUpIndicator">@drawable/ic_chevron_left_black_24dp</item>
+    </style>
+
+    <style name="AppTheme.ButtonUINormal" parent="AppTheme">
+        <item name="android:textColor">@color/cWhite</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:background">@drawable/button_ui</item>
+        <item name="android:layout_height">@dimen/button_height_normal</item>
+        <item name="android:paddingRight">@dimen/padding_horizontal_normal</item>
+        <item name="android:paddingLeft">@dimen/padding_horizontal_normal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppTheme.ToolbarLikeDialog" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:homeAsUpIndicator">@drawable/ic_clear_black_24dp</item>
+    </style>
+
+    <style name="AppTheme.ImageView" parent="AppTheme">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/bordered_imageview</item>
+    </style>
+
+    <style name="AppTheme.ImageViewSell" parent="AppTheme.ImageView">
+        <item name="android:layout_width">@dimen/image_grid_ratio_small</item>
+        <item name="android:layout_height">@dimen/image_grid_ratio_small</item>
+    </style>
+
+    <style name="AppTheme.ImageViewSellMain" parent="AppTheme.ImageView">
+        <item name="android:layout_width">104dp</item>
+        <item name="android:layout_height">104dp</item>
+    </style>
+
+    <style name="AppTheme.ImagePreview" parent="AppTheme.ImageView">
+        <item name="android:layout_width">@dimen/size_image_medium</item>
+        <item name="android:layout_height">@dimen/size_image_medium</item>
+    </style>
+
+    <!--
+        TextView Section
+    -->
+    <style name="AppTheme.TextView" parent="AppTheme">
+        <item name="android:textColor">@color/cBlack</item>
+    </style>
+
+    <!-- H1-->
+    <style name="AppTheme.TextViewH1" parent="AppTheme.TextView">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="AppTheme.TextViewH1.Light" parent="AppTheme.TextViewH1">
+        <item name="android:textColor">@color/cWhite</item>
+    </style>
+
+    <!-- H2 -->
+    <style name="AppTheme.TextViewH2" parent="AppTheme.TextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.TextViewH2.Light" parent="AppTheme.TextViewH2">
+        <item name="android:textColor">@color/cWhite</item>
+    </style>
+
+    <!-- H3 -->
+    <style name="AppTheme.TextViewH3" parent="AppTheme.TextView">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.TextViewH3.Light" parent="AppTheme.TextViewH3">
+        <item name="android:textColor">@color/cWhite</item>
+    </style>
+
+    <style name="AppTheme.TextViewH3.Grey" parent="AppTheme.TextViewH3">
+        <item name="android:textColor">@color/cGrey</item>
+    </style>
+
+    <style name="AppTheme.CurrencyTV.H3" parent="AppTheme.TextViewH3">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- H4 -->
+    <style name="AppTheme.TextViewH4" parent="AppTheme.TextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.TextViewH4.Light" parent="AppTheme.TextViewH4">
+        <item name="android:textColor">@color/cWhite</item>
+    </style>
+
+    <style name="AppTheme.TextViewH4.Grey" parent="AppTheme.TextViewH4">
+        <item name="android:textColor">@color/cGrey</item>
+    </style>
+
+    <style name="AppTheme.CurrencyTV.H4" parent="AppTheme.TextViewH4">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- H5 -->
+    <style name="AppTheme.TextViewH5" parent="AppTheme.TextView">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="AppTheme.TextViewH5.Grey" parent="AppTheme.TextViewH5">
+        <item name="android:textColor">@color/cGrey</item>
+    </style>
+
+    <style name="AppTheme.TextView.Toolbar" parent="AppTheme">
+        <item name="android:textAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- Button Section -->
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">12sp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:background">@drawable/button_ui</item>
+        <item name="android:textColor">@color/cWhite</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="AppTheme.ButtonFullWidth" parent="AppTheme">
+        <item name="android:background">@drawable/button_ui</item>
+        <item name="android:textColor">@color/cWhite</item>
+    </style>
+
+    <style name="AppTheme.ButtonFullWidth.Black" parent="AppTheme">
+        <item name="android:background">@drawable/button_ui_black</item>
+        <item name="android:textColor">@color/cWhite</item>
+    </style>
+
+    <!-- Action Mode Section -->
+    <style name="AppTheme.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="titleTextStyle">@style/ActionModeTitleTextStyle</item>
+    </style>
+
+    <style name="myclosebutton" parent="Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:tint">@color/cWhite</item> <!-- whatever color -->
+    </style>
+
+    <style name="ActionModeTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Indicator Section -->
+    <style name="AppTheme.Indicator" parent="AppTheme">
+        <item name="indicatorColor">@color/colorPrimary</item>
+    </style>
+</resources>

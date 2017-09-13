@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.endrawan.marketplace.SellItemActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/AppTheme.ToolbarLikeDialog">
+
+        <CustomComponents.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Jual Produk" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mConfirmation"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cBackgroundGrey"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_vertical_large"
+                android:paddingTop="@dimen/padding_vertical_large">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_vertical_normal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/padding_horizontal_large"
+                        android:paddingRight="@dimen/padding_horizontal_large">
+
+                        <ImageView
+                            android:id="@+id/image0"
+                            style="@style/AppTheme.ImagePreview"
+                            android:contentDescription="@string/content_description" />
+
+                        <View
+                            android:layout_width="@dimen/padding_horizontal_small"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            style="@style/AppTheme.ImagePreview"
+                            android:contentDescription="@string/content_description" />
+
+                        <View
+                            android:layout_width="@dimen/padding_horizontal_small"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            style="@style/AppTheme.ImagePreview"
+                            android:contentDescription="@string/content_description" />
+
+                        <View
+                            android:layout_width="@dimen/padding_horizontal_small"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            style="@style/AppTheme.ImagePreview"
+                            android:contentDescription="@string/content_description" />
+
+                        <View
+                            android:layout_width="@dimen/padding_horizontal_small"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/image4"
+                            style="@style/AppTheme.ImagePreview"
+                            android:contentDescription="@string/content_description" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <CustomComponents.Button
+                    android:id="@+id/mAddPictures"
+                    style="@style/AppTheme.ButtonUINormal"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:text="Tambah Gambar" />
+            </LinearLayout>
+
+
+            <!-- Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cBackgroundGrey" />
+
+                <RelativeLayout
+                    android:id="@+id/mSellName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/sell_padding_item_vertical"
+                    android:paddingLeft="@dimen/sell_padding_item_horizontal"
+                    android:paddingRight="@dimen/sell_padding_item_horizontal"
+                    android:paddingTop="@dimen/sell_padding_item_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/mNextName"
+                        android:layout_toStartOf="@+id/mNextName"
+                        android:orientation="vertical">
+
+                        <CustomComponents.TextViewH4
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Barang" />
+
+                        <CustomComponents.TextViewSubText
+                            android:id="@+id/mName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Tuliskan nama barang yang dijual" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/mNextName"
+                        android:layout_width="@dimen/sell_right_icon_size"
+                        android:layout_height="@dimen/sell_right_icon_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/right_arrow" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cBackgroundGrey" />
+
+                <RelativeLayout
+                    android:id="@+id/mSellCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/sell_padding_item_vertical"
+                    android:paddingLeft="@dimen/sell_padding_item_horizontal"
+                    android:paddingRight="@dimen/sell_padding_item_horizontal"
+                    android:paddingTop="@dimen/sell_padding_item_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/mNextCategory"
+                        android:layout_toStartOf="@+id/mNextCategory"
+                        android:orientation="vertical">
+
+                        <CustomComponents.TextViewH4
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kategori Barang" />
+
+                        <CustomComponents.TextViewSubText
+                            android:id="@+id/mCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Atur kategori barang yang dijual" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/mNextCategory"
+                        android:layout_width="@dimen/sell_right_icon_size"
+                        android:layout_height="@dimen/sell_right_icon_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/right_arrow" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cBackgroundGrey" />
+
+                <RelativeLayout
+                    android:id="@+id/mSellDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/sell_padding_item_vertical"
+                    android:paddingLeft="@dimen/sell_padding_item_horizontal"
+                    android:paddingRight="@dimen/sell_padding_item_horizontal"
+                    android:paddingTop="@dimen/sell_padding_item_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/mNextDescription"
+                        android:layout_toStartOf="@+id/mNextDescription"
+                        android:orientation="vertical">
+
+                        <CustomComponents.TextViewH4
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Deskripsi Barang" />
+
+                        <CustomComponents.TextViewSubText
+                            android:id="@+id/mDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Tuliskan keterangan barang yang dijual" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/mNextDescription"
+                        android:layout_width="@dimen/sell_right_icon_size"
+                        android:layout_height="@dimen/sell_right_icon_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/right_arrow" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cBackgroundGrey" />
+
+                <RelativeLayout
+                    android:id="@+id/mSellDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/sell_padding_item_vertical"
+                    android:paddingLeft="@dimen/sell_padding_item_horizontal"
+                    android:paddingRight="@dimen/sell_padding_item_horizontal"
+                    android:paddingTop="@dimen/sell_padding_item_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/mNextDetails"
+                        android:layout_toStartOf="@+id/mNextDetails"
+                        android:orientation="vertical">
+
+                        <CustomComponents.TextViewH4
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Detail Barang" />
+
+                        <CustomComponents.TextViewSubText
+                            android:id="@+id/mDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Atur detail barang yang dijual" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/mNextDetails"
+                        android:layout_width="@dimen/sell_right_icon_size"
+                        android:layout_height="@dimen/sell_right_icon_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/right_arrow" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cBackgroundGrey" />
+
+                <RelativeLayout
+                    android:id="@+id/mSellSending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/sell_padding_item_vertical"
+                    android:paddingLeft="@dimen/sell_padding_item_horizontal"
+                    android:paddingRight="@dimen/sell_padding_item_horizontal"
+                    android:paddingTop="@dimen/sell_padding_item_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/mNextSending"
+                        android:layout_toStartOf="@+id/mNextSending"
+                        android:orientation="vertical">
+
+                        <CustomComponents.TextViewH4
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pengiriman (Opsional)" />
+
+                        <CustomComponents.TextViewSubText
+                            android:id="@+id/mShipping"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Atur jasa pengiriman barang yang dijual" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/mNextSending"
+                        android:layout_width="@dimen/sell_right_icon_size"
+                        android:layout_height="@dimen/sell_right_icon_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/right_arrow" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cBackgroundGrey" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/mConfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <CustomComponents.Button
+            android:id="@+id/mSaveDraft"
+            style="@style/AppTheme.ButtonFullWidth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Simpan Draf" />
+
+        <CustomComponents.Button
+            android:id="@+id/mSellItem"
+            style="@style/AppTheme.ButtonFullWidth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jual" />
+
+    </LinearLayout>
+
+</RelativeLayout>

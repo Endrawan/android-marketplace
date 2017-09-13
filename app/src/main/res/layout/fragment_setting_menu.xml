@@ -1,0 +1,288 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Account -->
+        <LinearLayout
+            android:id="@+id/accountPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_vertical_normal"
+            android:paddingLeft="@dimen/padding_horizontal_normal"
+            android:paddingRight="@dimen/padding_horizontal_normal"
+            android:paddingTop="@dimen/padding_vertical_normal">
+
+            <ImageView
+                android:id="@+id/accountImage"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/profile" />
+
+            <View
+                android:layout_width="@dimen/margin_horizontal_normal"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Akun" />
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH4.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ubah nama anda, foto profil, serta pereferensi lain" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- End Account -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cBorderBottom" />
+    </LinearLayout>
+
+
+    <!-- Address -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/addressPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_vertical_normal"
+            android:paddingLeft="@dimen/padding_horizontal_normal"
+            android:paddingRight="@dimen/padding_horizontal_normal"
+            android:paddingTop="@dimen/padding_vertical_normal">
+
+            <ImageView
+                android:id="@+id/settingImage"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/address" />
+
+            <View
+                android:layout_width="@dimen/margin_horizontal_normal"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Alamat" />
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH4.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ubah alamat rumah atau penjualan anda" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cBorderBottom" />
+    </LinearLayout>
+    <!-- End Address -->
+
+    <!-- Credit Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/creditPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_vertical_normal"
+            android:paddingLeft="@dimen/padding_horizontal_normal"
+            android:paddingRight="@dimen/padding_horizontal_normal"
+            android:paddingTop="@dimen/padding_vertical_normal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/paypal_credit_card" />
+
+            <View
+                android:layout_width="@dimen/margin_horizontal_normal"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Rekening" />
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH4.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah atau ubah rekening anda" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cBorderBottom" />
+    </LinearLayout>
+    <!-- End Credit Card -->
+
+    <!-- Email -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/emailPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_vertical_normal"
+            android:paddingLeft="@dimen/padding_horizontal_normal"
+            android:paddingRight="@dimen/padding_horizontal_normal"
+            android:paddingTop="@dimen/padding_vertical_normal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/email_symbol" />
+
+            <View
+                android:layout_width="@dimen/margin_horizontal_normal"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Email" />
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH4.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atur email serta email penangguhan anda" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cBorderBottom" />
+    </LinearLayout>
+    <!-- End Email -->
+
+    <!-- Password -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/passwordPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_vertical_normal"
+            android:paddingLeft="@dimen/padding_horizontal_normal"
+            android:paddingRight="@dimen/padding_horizontal_normal"
+            android:paddingTop="@dimen/padding_vertical_normal">
+
+            <ImageView
+                android:id="@+id/passwordImage"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/key" />
+
+            <View
+                android:layout_width="@dimen/margin_horizontal_normal"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Password" />
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH4.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atur dan ubah sandi akun anda serta preferensi autentikasi dua langkah" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cBorderBottom" />
+    </LinearLayout>
+    <!-- End Password -->
+</LinearLayout>
