@@ -2,13 +2,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".fragments.check_out.PaymentFragment">
+
+    <CustomComponents.TextViewSemiBold
+        style="@style/AppTheme.TextViewH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_vertical_large"
+        android:layout_marginTop="@dimen/margin_vertical_large"
+        android:text="Pembayaran"
+        android:textAllCaps="true" />
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_clickable"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_vertical_normal"
+        android:paddingLeft="@dimen/padding_horizontal_normal"
+        android:paddingRight="@dimen/padding_horizontal_normal"
+        android:paddingTop="@dimen/padding_vertical_normal">
+
+        <CustomComponents.TextView
+            style="@style/AppTheme.TextViewH5.Grey"
+            android:text="Dikirim Ke: "
+            android:layout_marginBottom="@dimen/margin_vertical_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CustomComponents.TextViewSemiBold
+            android:id="@+id/name"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Rumah"/>
+
+        <CustomComponents.TextViewSemiBold
+            android:id="@+id/receiver"
+            style="@style/AppTheme.TextViewH5"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_vertical_small"
+            android:layout_marginBottom="@dimen/margin_vertical_small"
+            android:text="Nadi Endrawan"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/address"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Komplek Nusa Persada Blok H18 RT 03 RW 13"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/district"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cimahi Selatan, Cimahi"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/province"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jawa Barat, 40532"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/phone"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_vertical_small"
+            android:layout_marginBottom="@dimen/margin_vertical_small"
+            android:text="+6289652001107"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cBackgroundGrey" />
 
     <CustomComponents.Button
         android:id="@+id/payItems"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAllCaps="true"
-        android:text="Bayar Sekarang"/>
-
+        android:text="Bayar"/>
 </LinearLayout>

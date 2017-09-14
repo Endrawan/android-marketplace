@@ -55,30 +55,12 @@
         android:background="@color/cWhite"
         android:padding="8dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <CustomComponents.Button
-                android:id="@+id/mPrevious"
-                style="@style/AppTheme.ButtonFullWidth"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Sebelumnya" />
-
-            <View
-                android:layout_width="@dimen/margin_horizontal_small"
-                android:layout_height="match_parent" />
-
             <CustomComponents.Button
                 android:id="@+id/mNext"
                 style="@style/AppTheme.ButtonFullWidth"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Lanjut" />
+                android:text="Lanjut ke Pembayaran" />
 
-        </LinearLayout>
     </CustomComponents.AppBarLayout>
 </android.support.design.widget.CoordinatorLayout>
