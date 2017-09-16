@@ -6,6 +6,7 @@
     tools:context=".menus.HomeFragment">
 
     <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
@@ -22,6 +23,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
+                android:minHeight="?attr/actionBarSize"
                 app:popupTheme="@style/AppTheme.PopupOverlay">
 
                 <CustomComponents.TextViewSemiBold
@@ -69,11 +71,13 @@
     </android.support.v4.widget.NestedScrollView>
 
     <android.support.v7.widget.CardView
+        android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_horizontal_small"
         android:layout_marginRight="@dimen/margin_horizontal_small"
         android:layout_marginTop="@dimen/margin_vertical_small"
+        android:transitionName="@string/search_widget_transition"
         app:behavior_overlapTop="64dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 

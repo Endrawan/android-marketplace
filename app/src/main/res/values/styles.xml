@@ -23,7 +23,7 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AppTheme.Toolbar" parent="AppTheme">
-        <item name="android:homeAsUpIndicator">@drawable/username</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_chevron_left_black_24dp</item>
     </style>
 
     <style name="AppTheme.ToolbarWhite" parent="ThemeOverlay.AppCompat.Light">
@@ -133,7 +133,8 @@
     </style>
 
     <style name="AppTheme.TextView.Toolbar" parent="AppTheme">
-        <item name="android:textAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title</item>
+        <item name="android:textAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title
+        </item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
@@ -157,6 +158,18 @@
     <style name="AppTheme.ButtonFullWidth.Black" parent="AppTheme">
         <item name="android:background">@drawable/button_ui_black</item>
         <item name="android:textColor">@color/cWhite</item>
+    </style>
+
+    <!-- EditText Section -->
+    <style name="AppTheme.EditText" parent="AppTheme"/>
+
+    <style name="AppTheme.EditText.Light" parent="AppTheme.EditText">
+        <item name="android:textColor">@color/cBlack</item>
+        <item name="android:textColorHint">@color/cBlack</item>
+    </style>
+
+    <style name="AppTheme.EditText.Light.H3" parent="AppTheme.EditText.Light">
+        <item name="android:textAppearance">@style/AppTheme.TextViewH3</item>
     </style>
 
     <!-- Action Mode Section -->
