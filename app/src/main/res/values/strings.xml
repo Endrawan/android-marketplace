@@ -50,5 +50,8 @@
     <string name="search_button_edit">Edit</string>
     <string name="search_widget_hint">Cari Produk &amp; Brand</string>
     <string name="search_widget_transition">sw_transition</string>
+    <string name="search_label_result">Showing 1000+ results for </string>
+
+    <string name="sponsored_ads">Sponsored Ads</string>
 
 </resources>

@@ -39,4 +39,17 @@
         <item name="android:paddingBottom">@dimen/padding_vertical_small</item>
     </style>
 
+
+    <style name="AppTheme.Button.SearchWord" parent="AppTheme.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:background">@drawable/button_ui_black</item>
+        <item name="android:textColor">@color/cWhite</item>
+        <item name="android:paddingRight">@dimen/padding_horizontal_small</item>
+        <item name="android:paddingLeft">@dimen/padding_horizontal_small</item>
+        <item name="android:paddingTop">@dimen/padding_vertical_small</item>
+        <item name="android:paddingBottom">@dimen/margin_vertical_small</item>
+    </style>
+
 </resources>

@@ -12,6 +12,7 @@
 
     <dimen name="margin_top">16dp</dimen>
     <dimen name="margin_bottom">16dp</dimen>
+    <dimen name="margin_horizontal_xsmall">4dp</dimen>
     <dimen name="margin_horizontal_small">8dp</dimen>
     <dimen name="margin_horizontal_normal">16dp</dimen>
     <dimen name="margin_horizontal_large">24dp</dimen>
@@ -25,10 +26,12 @@
 
     <dimen name="padding_normal">16dp</dimen>
     <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_xsmall">4dp</dimen>
     <dimen name="padding_horizontal_xlarge">32dp</dimen>
     <dimen name="padding_horizontal_large">24dp</dimen>
     <dimen name="padding_horizontal_normal">16dp</dimen>
     <dimen name="padding_horizontal_small">8dp</dimen>
+    <dimen name="padding_horizontal_xsmall">4dp</dimen>
     <dimen name="padding_vertical_normal">16dp</dimen>
     <dimen name="padding_vertical_large">24dp</dimen>
     <dimen name="padding_vertical_xlarge">32dp</dimen>

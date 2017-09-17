@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/margin_horizontal_normal"
+            android:layout_marginRight="@dimen/margin_horizontal_normal"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/trending" />
+
+        <CustomComponents.TextView
+            android:id="@+id/text"
+            style="@style/AppTheme.TextViewH3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            tools:text="Football" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:background="@color/cBorderBottom" />
+</LinearLayout>

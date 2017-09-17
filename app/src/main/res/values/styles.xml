@@ -7,7 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <!--<item name="android:windowBackground">@color/cBackgroundGrey</item>-->
+        <item name="android:windowBackground">@color/cBackgroundGrey</item>
 
         <!--  Action Mode Style -->
         <item name="windowActionModeOverlay">true</item>
@@ -119,6 +119,10 @@
         <item name="android:textColor">@color/cGrey</item>
     </style>
 
+    <style name="AppTheme.TextViewH4.Primary" parent="AppTheme.TextViewH4">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
     <style name="AppTheme.CurrencyTV.H4" parent="AppTheme.TextViewH4">
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
@@ -128,8 +132,21 @@
         <item name="android:textSize">13sp</item>
     </style>
 
+    <style name="AppTheme.TextViewH5.Light" parent="AppTheme.TextViewH5">
+        <item name="android:textColor">@color/cWhite</item>
+    </style>
+
     <style name="AppTheme.TextViewH5.Grey" parent="AppTheme.TextViewH5">
         <item name="android:textColor">@color/cGrey</item>
+    </style>
+
+    <!-- H6 -->
+    <style name="AppTheme.TextViewH6" parent="AppTheme.TextView">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.TextViewH6.Light" parent="AppTheme.TextViewH6">
+        <item name="android:textColor">@color/cWhite</item>
     </style>
 
     <style name="AppTheme.TextView.Toolbar" parent="AppTheme">

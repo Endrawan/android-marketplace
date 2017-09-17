@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.endrawan.marketplace.SearchFragment">
+    tools:context=".fragments.SearchFragment">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/mUpperLayout"
@@ -25,11 +25,11 @@
                 style="@style/AppTheme.EditText.Light.H3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/padding_normal"
                 android:background="@android:color/transparent"
                 android:hint="@string/search_widget_hint"
-                android:inputType="textAutoComplete">
-
-                <requestFocus />
+                android:inputType="textPersonName">
+                <requestFocus/>
             </CustomComponents.EditText>
 
         </android.support.v7.widget.Toolbar>
@@ -48,35 +48,62 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_vertical_normal"
                 android:background="@color/cWhite"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:padding="@dimen/padding_normal">
+
                     <CustomComponents.TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAllCaps="true"
-                        android:text="@string/search_label_recent"/>
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/recentEdit"
+                        android:text="@string/search_label_recent"
+                        android:textAllCaps="true" />
+
                     <CustomComponents.TextView
                         android:id="@+id/recentEdit"
+                        style="@style/AppTheme.TextViewH4.Primary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/search_button_edit"/>
-                </LinearLayout>
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/search_button_edit" />
+                </RelativeLayout>
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/RVrecent"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    android:paddingBottom="@dimen/padding_vertical_normal"
+                    android:paddingLeft="@dimen/padding_horizontal_normal"
+                    android:paddingRight="@dimen/padding_horizontal_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cWhite"
+                android:orientation="vertical">
+
+                <CustomComponents.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_normal"
+                    android:text="@string/search_label_trending"
+                    android:textAllCaps="true" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/RVtrending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/RVtrending"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

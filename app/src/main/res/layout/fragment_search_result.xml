@@ -1,0 +1,93 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SearchResultFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cWhite">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RVSearch"
+                android:background="@color/cBackgroundGrey"
+                android:layout_marginRight="@dimen/margin_horizontal_normal"
+                android:layout_marginEnd="@dimen/margin_horizontal_normal"
+                android:layout_marginTop="@dimen/margin_vertical_small"
+                android:layout_marginBottom="@dimen/margin_vertical_small"
+                android:clipToPadding="true"
+                android:overScrollMode="never"
+                android:padding="@dimen/padding_xsmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <CustomComponents.TextView
+                    android:id="@+id/searchCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_label_result" />
+
+                <CustomComponents.TextViewSemiBold
+                    android:id="@+id/searchKeyword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RVRelevance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_vertical_normal"
+                android:paddingTop="@dimen/padding_vertical_normal">
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_vertical_small"
+                    android:paddingLeft="@dimen/padding_horizontal_normal"
+                    android:paddingRight="@dimen/padding_horizontal_normal"
+                    android:text="@string/sponsored_ads" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/RVSponsored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

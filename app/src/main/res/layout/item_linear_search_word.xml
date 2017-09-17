@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--<CustomComponents.Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/word"
+    style="@style/AppTheme.Button.SearchWord"
+    android:textColor="@color/cWhite"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginRight="@dimen/margin_horizontal_xsmall"
+    android:layout_marginEnd="@dimen/margin_horizontal_xsmall"
+    android:drawablePadding="@dimen/margin_horizontal_xsmall"
+    android:drawableRight="@drawable/ic_clear_white_16dp"
+    android:drawableEnd="@drawable/ic_clear_white_16dp"/>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme.Button.SearchWord"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginRight="@dimen/margin_horizontal_xsmall"
+    android:layout_marginEnd="@dimen/margin_horizontal_xsmall"
+    android:orientation="horizontal">
+
+    <CustomComponents.TextView
+        android:id="@+id/word"
+        style="@style/AppTheme.TextViewH6.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="@dimen/margin_horizontal_xsmall"
+        android:layout_marginEnd="@dimen/margin_horizontal_xsmall" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/ic_clear_white_16dp" />
+
+</LinearLayout>

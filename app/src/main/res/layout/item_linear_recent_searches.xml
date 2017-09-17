@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="72dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginBottom="@dimen/margin_vertical_xsmall"
+        app:civ_border_color="@color/cBorderBottom"
+        app:civ_border_width="2dp"
+        tools:src="@drawable/trash" />
+
+    <CustomComponents.TextView
+        android:id="@+id/name"
+        style="@style/AppTheme.TextViewH5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        tools:text="samsung earphone" />
+
+</LinearLayout>
