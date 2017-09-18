@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomComponents.TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/word"
+    style="@style/AppTheme.TextViewH5.Grey"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/margin_horizontal_small"
+    android:layout_marginLeft="@dimen/margin_horizontal_small"
+    android:layout_marginRight="@dimen/margin_horizontal_small"
+    android:layout_marginStart="@dimen/margin_horizontal_small"
+    android:gravity="center_vertical" />

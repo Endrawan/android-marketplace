@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description" />
+
+        <ImageView
+            android:id="@+id/wishlist"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="end|top"
+            android:layout_margin="@dimen/margin_normal"
+            android:contentDescription="@string/content_description" />
+
+        <CustomComponents.TextView
+            android:id="@+id/discountPercent"
+            style="@style/AppTheme.TextViewH6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cBackgroundGrey"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="@dimen/margin_normal"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CustomComponents.TextView
+            android:id="@+id/name"
+            style="@style/AppTheme.TextViewH3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"/>
+
+        <CustomComponents.TextViewSemiBold
+            android:id="@+id/realPrice"
+            style="@style/AppTheme.TextViewH3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CustomComponents.TextView
+            android:id="@+id/beforeDiscPrice"
+            style="@style/AppTheme.TextViewH4.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CustomComponents.TextView
+                android:id="@+id/rating"
+                style="@style/AppTheme.TextViewH5.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cGreen"
+                android:drawableRight="@drawable/facebook_logo"
+                android:drawableEnd="@drawable/facebook_logo"/>
+            <CustomComponents.TextView
+                android:id="@+id/ratingCount"
+                style="@style/AppTheme.TextViewH4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <CustomComponents.TextView
+        android:id="@+id/note"
+        style="@style/AppTheme.TextViewH4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -149,6 +149,10 @@
         <item name="android:textColor">@color/cWhite</item>
     </style>
 
+    <style name="AppTheme.TextViewH6.Grey" parent="AppTheme.TextViewH6">
+        <item name="android:textColor">@color/cGrey</item>
+    </style>
+
     <style name="AppTheme.TextView.Toolbar" parent="AppTheme">
         <item name="android:textAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title
         </item>
