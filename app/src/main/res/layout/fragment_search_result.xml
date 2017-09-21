@@ -13,22 +13,23 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/RVSearch"
-                android:background="@color/cBackgroundGrey"
-                android:layout_marginRight="@dimen/margin_horizontal_normal"
-                android:layout_marginEnd="@dimen/margin_horizontal_normal"
-                android:layout_marginTop="@dimen/margin_vertical_small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginBottom="@dimen/margin_vertical_small"
+                android:layout_marginEnd="@dimen/margin_horizontal_normal"
+                android:layout_marginRight="@dimen/margin_horizontal_normal"
+                android:layout_marginTop="@dimen/margin_vertical_small"
+                android:background="@color/cBackgroundGrey"
                 android:clipToPadding="true"
                 android:overScrollMode="never"
-                android:padding="@dimen/padding_xsmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
+                android:padding="@dimen/padding_xsmall" />
         </android.support.v7.widget.Toolbar>
+
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
@@ -44,20 +45,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
                 android:orientation="horizontal"
                 android:padding="16dp">
 
                 <CustomComponents.TextView
                     android:id="@+id/searchCount"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_label_result" />
+                    android:layout_height="wrap_content" />
 
                 <CustomComponents.TextViewSemiBold
                     android:id="@+id/searchKeyword"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:maxLines="1"/>
+                    android:maxLines="1" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
@@ -84,10 +85,82 @@
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/RVSponsored"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginTop="@dimen/margin_vertical_normal"
+        android:layout_marginBottom="@dimen/margin_vertical_normal"
+        android:layout_marginLeft="@dimen/margin_horizontal_large"
+        android:layout_marginRight="@dimen/margin_horizontal_large"
+        android:background="@drawable/background_normall_black_ripple"
+        android:orientation="horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_vertical_small"
+                android:layout_marginEnd="@dimen/margin_horizontal_xsmall"
+                android:layout_marginRight="@dimen/margin_horizontal_xsmall"
+                android:layout_marginTop="@dimen/margin_vertical_small"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_sort_white_24dp" />
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH6.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/product_sort"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cBackgroundGrey" />
+
+        <LinearLayout
+            android:id="@+id/filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_vertical_small"
+                android:layout_marginEnd="@dimen/margin_horizontal_xsmall"
+                android:layout_marginRight="@dimen/margin_horizontal_xsmall"
+                android:layout_marginTop="@dimen/margin_vertical_small"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_filter_white_24dp" />
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH6.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/product_filter"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

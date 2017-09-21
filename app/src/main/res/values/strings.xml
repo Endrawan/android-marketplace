@@ -54,4 +54,13 @@
 
     <string name="sponsored_ads">Sponsored Ads</string>
 
+    <string name="product_transition">p_transition</string>
+    <string name="product_sort">Urutkan</string>
+    <string name="product_filter">Grupkan</string>
+    <string name="product_dialog_relevance">Relevan</string>
+    <string name="product_dialog_popularity">Populer</string>
+    <string name="product_dialog_cheapest">Harga: Murah ke Mahal</string>
+    <string name="product_dialog_expensive">Harga: Mahal ke Murah</string>
+    <string name="product_dialog_latest">Terbaru</string>
+
 </resources>
