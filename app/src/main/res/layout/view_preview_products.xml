@@ -16,34 +16,33 @@
         android:paddingBottom="@dimen/padding_vertical_small">
 
         <CustomComponents.TextView
-            android:id="@+id/textNewProduct"
+            android:id="@+id/textProduct"
             style="@style/AppTheme.TextViewH3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/buttonNewProduct"
-            android:layout_toStartOf="@+id/buttonNewProduct"
-            android:text="Produk Terbaru"
+            android:layout_toLeftOf="@+id/buttonProduct"
+            android:layout_toStartOf="@+id/buttonProduct"
             tools:text="Produk Terbaru" />
 
         <CustomComponents.Button
-            android:id="@+id/buttonNewProduct"
-            style="@style/AppTheme.Button"
+            android:id="@+id/buttonProduct"
+            style="@style/AppTheme.Button.H5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="1dp"
+            android:padding="@dimen/padding_small"
             android:text="Lihat Semua"
             tools:text="lihat semua" />
 
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/RVNewProduct"
+        android:id="@+id/RVProduct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

@@ -19,15 +19,10 @@
 
     <!-- Button Section -->
     <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Borderless">
-        <item name="android:textSize">12sp</item>
         <item name="android:minHeight">0dp</item>
         <item name="android:minWidth">0dp</item>
         <item name="android:background">@drawable/button_ui</item>
-        <item name="android:textColor">@color/cWhite</item>
-        <item name="android:paddingRight">12dp</item>
-        <item name="android:paddingLeft">12dp</item>
-        <item name="android:paddingTop">12dp</item>
-        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/AppTheme.TextView</item>
     </style>
 
     <style name="AppTheme.Button.White" parent="AppTheme.Button">
@@ -50,6 +45,10 @@
         <item name="android:paddingLeft">@dimen/padding_horizontal_small</item>
         <item name="android:paddingTop">@dimen/padding_vertical_small</item>
         <item name="android:paddingBottom">@dimen/margin_vertical_small</item>
+    </style>
+
+    <style name="AppTheme.Button.H5" parent="AppTheme.Button">
+        <item name="android:textAppearance">@style/AppTheme.TextViewH5.Light</item>
     </style>
 
 </resources>

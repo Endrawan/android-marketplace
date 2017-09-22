@@ -60,7 +60,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/margin_vertical_normal" />
 
-            <include layout="@layout/view_new_products" />
+            <include
+                android:id="@+id/newProduct"
+                layout="@layout/view_preview_products" />
+
+            <include
+                android:id="@+id/adv_large_1"
+                layout="@layout/view_adv_large" />
+
+            <include
+                android:id="@+id/recentProduct"
+                layout="@layout/view_preview_products" />
+
 
             <View
                 android:layout_width="match_parent"
@@ -88,7 +99,6 @@
             android:layout_height="wrap_content"
             android:background="@drawable/white_clickable"
             android:clickable="true"
-            android:drawableLeft="@drawable/search"
             android:drawablePadding="@dimen/padding_normal"
             android:drawableStart="@drawable/search"
             android:paddingBottom="12dp"

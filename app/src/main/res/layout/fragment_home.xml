@@ -58,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/margin_vertical_normal" />
 
-            <include layout="@layout/view_new_products" />
+            <include layout="@layout/view_preview_products" />
 
             <View
                 android:layout_width="match_parent"

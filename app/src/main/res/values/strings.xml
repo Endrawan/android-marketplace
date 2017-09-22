@@ -47,10 +47,12 @@
 
     <string name="search_label_recent">Recent Searches</string>
     <string name="search_label_trending">Trending Searches</string>
+    <string name="search_label_result">Showing 1000+ results for </string>
     <string name="search_button_edit">Edit</string>
     <string name="search_widget_hint">Cari Produk &amp; Brand</string>
     <string name="search_widget_transition">sw_transition</string>
-    <string name="search_label_result">Showing 1000+ results for </string>
+    <string name="search_option_speech">Speech</string>
+    <string name="search_option_camera">Camera</string>
 
     <string name="sponsored_ads">Sponsored Ads</string>
 
@@ -61,6 +63,7 @@
     <string name="product_dialog_popularity">Populer</string>
     <string name="product_dialog_cheapest">Harga: Murah ke Mahal</string>
     <string name="product_dialog_expensive">Harga: Mahal ke Murah</string>
+    <string name="product_dialog_discount">Diskon</string>
     <string name="product_dialog_latest">Terbaru</string>
 
 </resources>
