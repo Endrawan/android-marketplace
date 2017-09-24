@@ -89,6 +89,7 @@
         android:layout_marginRight="@dimen/margin_horizontal_normal"
         android:background="@drawable/button_ui"
         android:clickable="true"
+        android:visibility="gone"
         android:orientation="horizontal"
         android:paddingBottom="@dimen/padding_vertical_large"
         android:paddingLeft="@dimen/padding_horizontal_xlarge"

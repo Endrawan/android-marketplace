@@ -24,11 +24,12 @@
                 style="@style/AppTheme.EditText.Light.H3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/padding_normal"
+                android:layout_marginRight="@dimen/padding_normal"
                 android:background="@android:color/transparent"
                 android:hint="@string/search_widget_hint"
-                android:inputType="textAutoComplete">
-
-                <requestFocus />
+                android:inputType="textPersonName">
+                <requestFocus/>
             </CustomComponents.EditText>
 
         </android.support.v7.widget.Toolbar>
@@ -42,7 +43,71 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_vertical_normal"
+                android:background="@color/cWhite"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_normal">
+
+                    <CustomComponents.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toStartOf="@+id/recentEdit"
+                        android:layout_toLeftOf="@+id/recentEdit"
+                        android:text="@string/search_label_recent"
+                        android:textAllCaps="true" />
+
+                    <CustomComponents.TextView
+                        android:id="@+id/recentEdit"
+                        style="@style/AppTheme.TextViewH4.Primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/search_button_edit" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/RVrecent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    android:paddingBottom="@dimen/padding_vertical_normal"
+                    android:paddingLeft="@dimen/padding_horizontal_normal"
+                    android:paddingRight="@dimen/padding_horizontal_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cWhite"
+                android:orientation="vertical">
+
+                <CustomComponents.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_normal"
+                    android:text="@string/search_label_trending"
+                    android:textAllCaps="true" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/RVtrending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
 </android.support.design.widget.CoordinatorLayout>

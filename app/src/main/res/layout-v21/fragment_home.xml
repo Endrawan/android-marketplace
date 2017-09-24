@@ -64,6 +64,10 @@
                 android:id="@+id/newProduct"
                 layout="@layout/view_preview_products" />
 
+            <!--<include
+                android:id="@+id/spotlight1"
+                layout="@layout/view_spotlight"/>-->
+
             <include
                 android:id="@+id/adv_large_1"
                 layout="@layout/view_adv_large" />
@@ -72,10 +76,14 @@
                 android:id="@+id/recentProduct"
                 layout="@layout/view_preview_products" />
 
+            <include
+                android:id="@+id/adv_large_2"
+                layout="@layout/view_adv_large" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="64dp" />
+
+            <include
+                android:id="@+id/topOffers"
+                layout="@layout/view_preview_products" />
 
         </LinearLayout>
 

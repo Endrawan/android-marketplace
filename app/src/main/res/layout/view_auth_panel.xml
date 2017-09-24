@@ -37,6 +37,7 @@
             <CustomComponents.Button
                 android:id="@+id/mLogin"
                 style="@style/AppTheme.Button.White"
+                android:textAppearance="@style/AppTheme.TextViewH5.Primary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sign_in" />
@@ -48,6 +49,7 @@
             <CustomComponents.Button
                 android:id="@+id/mRegister"
                 style="@style/AppTheme.Button.White"
+                android:textAppearance="@style/AppTheme.TextViewH5.Primary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sign_up" />

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
@@ -24,13 +25,13 @@
                     android:id="@+id/productImages"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:transitionName="product"/>
+                    android:transitionName="product" />
 
                 <me.relex.circleindicator.CircleIndicator
                     android:id="@+id/indicator"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:layout_gravity="bottom"/>
+                    android:layout_gravity="bottom" />
             </FrameLayout>
 
             <include
@@ -65,27 +66,55 @@
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true">
 
-            <CustomComponents.Button
-                android:id="@+id/addCart"
-                style="@style/AppTheme.ButtonFullWidth.Black"
+            <FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:paddingRight="@dimen/padding_horizontal_normal"
-                android:paddingLeft="@dimen/padding_horizontal_normal"
-                android:text="Ke Keranjang"/>
+                android:background="@drawable/button_ui_black">
+
+                <CustomComponents.Button
+                    android:id="@+id/addCart"
+                    style="@style/AppTheme.ButtonFullWidth.Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/padding_horizontal_normal"
+                    android:paddingRight="@dimen/padding_horizontal_normal"
+                    android:text="Ke Keranjang" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/cartLoading"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    app:indicatorColor="@color/cWhite"
+                    app:indicatorName="BallPulseSyncIndicator" />
+            </FrameLayout>
 
             <View
                 android:layout_width="@dimen/margin_horizontal_small"
                 android:layout_height="match_parent" />
 
-            <CustomComponents.Button
-                android:id="@+id/buyItem"
-                style="@style/AppTheme.ButtonFullWidth"
+
+            <FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Beli Barang"/>
+                android:layout_weight="1">
+
+                <CustomComponents.Button
+                    android:id="@+id/buyItem"
+                    style="@style/AppTheme.ButtonFullWidth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Beli Barang" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/buyLoading"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    app:indicatorColor="@color/cWhite"
+                    app:indicatorName="BallPulseSyncIndicator" />
+            </FrameLayout>
 
         </LinearLayout>
     </CustomComponents.AppBarLayout>

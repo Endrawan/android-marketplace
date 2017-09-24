@@ -42,7 +42,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="64dp" />
+                android:layout_height="800dp" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
@@ -50,7 +50,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@android:color/transparent" />
+        android:background="@color/cPrimaryTransparent" />
 
     <CustomComponents.AppBarLayout
         android:layout_width="match_parent"
