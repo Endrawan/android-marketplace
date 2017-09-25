@@ -40,10 +40,18 @@
         <FrameLayout
             android:id="@+id/content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </android.support.v4.widget.NestedScrollView>
 
-    <CustomComponents.AppBarLayout
+    <!--<CustomComponents.AppBarLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:background="@color/cWhite"
+        android:padding="8dp">-->
+
+    <CustomComponents.FrameLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="64dp"
@@ -53,8 +61,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
             <CustomComponents.Button
                 android:id="@+id/mSaveDraft"
                 style="@style/AppTheme.ButtonFullWidth"
@@ -74,8 +82,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Jual" />
-
         </LinearLayout>
-    </CustomComponents.AppBarLayout>
+    </CustomComponents.FrameLayout>
+    <!--</CustomComponents.AppBarLayout>-->
 
 </android.support.design.widget.CoordinatorLayout>

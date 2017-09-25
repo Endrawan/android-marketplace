@@ -4,25 +4,120 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/margin_vertical_small"
     android:background="@drawable/layout_shadowed"
-    android:orientation="vertical"
-    android:paddingLeft="@dimen/padding_horizontal_normal"
-    android:paddingRight="@dimen/padding_horizontal_normal">
+    android:orientation="vertical">
 
     <CustomComponents.TextView
         android:id="@+id/productName"
-        style="@style/AppTheme.TextViewH3"
+        style="@style/AppTheme.TextViewH4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/padding_vertical_xsmall"
         android:paddingTop="@dimen/padding_vertical_small"
+        android:paddingLeft="@dimen/padding_horizontal_normal"
+        android:paddingRight="@dimen/padding_horizontal_normal"
+        android:maxLines="2"
         android:text="We got bitches everybody!!" />
 
-    <CustomComponents.TextViewSemiBold
-        android:id="@+id/productPrice"
-        style="@style/AppTheme.CurrencyTV.H3"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_vertical_small"
         android:paddingBottom="@dimen/padding_vertical_small"
-        android:paddingTop="@dimen/padding_vertical_xsmall"
-        android:text="Rp 20.000,-" />
+        android:paddingLeft="@dimen/padding_horizontal_normal"
+        android:paddingRight="@dimen/padding_horizontal_normal"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <CustomComponents.TextViewSemiBold
+            android:id="@+id/productPrice"
+            style="@style/AppTheme.TextViewH3.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CustomComponents.TextView
+            android:id="@+id/beforeDiscPrice"
+            style="@style/AppTheme.TextViewH6.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_horizontal_small"
+            android:layout_marginLeft="@dimen/margin_horizontal_small"
+            android:text="Rp. 600.000,00"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/discountPercent"
+            style="@style/AppTheme.TextViewH7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_small_grey"
+            android:paddingBottom="@dimen/padding_vertical_xxsmall"
+            android:paddingLeft="@dimen/padding_horizontal_xsmall"
+            android:paddingRight="@dimen/padding_horizontal_xsmall"
+            android:paddingTop="@dimen/padding_vertical_xxsmall"
+            android:textAllCaps="true"
+            android:text="52% Off"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cBackgroundGrey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_horizontal_large"
+            android:layout_marginEnd="@dimen/margin_horizontal_large"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CustomComponents.TextView
+                android:id="@+id/rating"
+                style="@style/AppTheme.TextViewH7.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_small_green"
+                android:drawableRight="@drawable/ic_grade_white_8dp"
+                android:drawableEnd="@drawable/ic_grade_white_8dp"
+                android:drawablePadding="@dimen/margin_horizontal_xsmall"
+                android:paddingBottom="@dimen/padding_vertical_xxsmall"
+                android:paddingLeft="@dimen/padding_horizontal_xsmall"
+                android:paddingRight="@dimen/padding_horizontal_xsmall"
+                android:paddingTop="@dimen/padding_vertical_xxsmall"
+                android:text="5.0"/>
+
+            <CustomComponents.TextView
+                android:id="@+id/ratingCount"
+                style="@style/AppTheme.TextViewH5.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_horizontal_small"
+                android:layout_marginStart="@dimen/margin_horizontal_small"
+                android:text="(48)"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH5.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 Review"/>
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_horizontal_xsmall"
+                android:layout_marginRight="@dimen/margin_horizontal_xsmall"
+                android:text="&amp;"/>
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH5.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Q&amp;A"/>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

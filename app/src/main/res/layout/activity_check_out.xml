@@ -40,7 +40,7 @@
             android:layout_height="wrap_content" />
     </android.support.v4.widget.NestedScrollView>
 
-    <CustomComponents.AppBarLayout
+    <!--<CustomComponents.AppBarLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="64dp"
@@ -48,12 +48,21 @@
         android:background="@color/cWhite"
         android:padding="8dp">
 
-            <CustomComponents.Button
-                android:id="@+id/mNext"
-                style="@style/AppTheme.ButtonFullWidth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Lanjut ke Pembayaran" />
+    </CustomComponents.AppBarLayout>-->
+    <FrameLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:background="@color/cWhite"
+        android:padding="8dp">
 
-    </CustomComponents.AppBarLayout>
+        <CustomComponents.Button
+            android:id="@+id/mNext"
+            style="@style/AppTheme.ButtonFullWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lanjut ke Pembayaran" />
+    </FrameLayout>
+
 </android.support.design.widget.CoordinatorLayout>

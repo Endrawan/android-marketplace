@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_vertical_normal"
+    android:layout_marginLeft="@dimen/margin_horizontal_small"
+    android:layout_marginRight="@dimen/margin_horizontal_small"
+    android:layout_marginTop="@dimen/margin_vertical_normal"
+    card_view:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_normal"
+            android:orientation="vertical">
+
+            <CustomComponents.TextViewSemiBold
+                style="@style/AppTheme.TextViewH3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_vertical_normal"
+                android:text="Dijual Oleh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_horizontal_normal"
+                    android:layout_marginRight="@dimen/margin_horizontal_normal"
+                    android:src="@drawable/ic_amex" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <CustomComponents.TextView
+                        style="@style/AppTheme.TextViewH4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="American Express" />
+
+                    <CustomComponents.TextView
+                        style="@style/AppTheme.TextViewH5.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_vertical_xsmall"
+                        android:layout_marginBottom="@dimen/margin_vertical_xsmall"
+                        android:text="Rp 20.000,-" />
+
+                    <CustomComponents.TextView
+                        style="@style/AppTheme.TextViewH5.Blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Store" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cBackgroundGrey" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_normal">
+
+            <CustomComponents.TextView
+                android:id="@+id/rating"
+                style="@style/AppTheme.TextViewH7.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_small_green"
+                android:drawableEnd="@drawable/ic_grade_white_8dp"
+                android:drawablePadding="@dimen/margin_horizontal_xsmall"
+                android:drawableRight="@drawable/ic_grade_white_8dp"
+                android:paddingBottom="@dimen/padding_vertical_xxsmall"
+                android:paddingLeft="@dimen/padding_horizontal_xsmall"
+                android:paddingRight="@dimen/padding_horizontal_xsmall"
+                android:paddingTop="@dimen/padding_vertical_xxsmall"
+                android:text="4.1" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cBackgroundGrey" />
+
+        <CustomComponents.TextView
+            style="@style/AppTheme.TextViewH4.Blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="Sell this item on SerbaJualan" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -66,4 +66,6 @@
     <string name="product_dialog_discount">Diskon</string>
     <string name="product_dialog_latest">Terbaru</string>
 
+    <string name="details_label_moreqanda">Lihat Semua Q&amp;A</string>
+    <string name="details_label_qanda">Question &amp; Answers</string>
 </resources>

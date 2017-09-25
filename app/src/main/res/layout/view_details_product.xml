@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <CustomComponents.TextView
+        <CustomComponents.TextViewSemiBold
             style="@style/AppTheme.TextViewH3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,7 +39,9 @@
             android:background="@color/cBorderBottom" />
 
         <CustomComponents.TextView
-            style="@style/AppTheme.TextViewH4"
+            style="@style/AppTheme.TextViewH4.Blue"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"

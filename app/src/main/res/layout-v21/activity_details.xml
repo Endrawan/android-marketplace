@@ -10,7 +10,9 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fillViewport="true">
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:paddingBottom="64dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,9 +44,17 @@
                 android:id="@+id/detailsSection"
                 layout="@layout/view_details_product" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="800dp" />
+            <include
+                android:id="@+id/protectionSection"
+                layout="@layout/view_protection_product"/>
+
+            <include
+                android:id="@+id/reviewSection"
+                layout="@layout/view_review_product"/>
+
+            <include
+                android:id="@+id/ownerSection"
+                layout="@layout/view_owner_product"/>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

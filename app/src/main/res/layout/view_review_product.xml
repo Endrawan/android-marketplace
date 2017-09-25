@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_vertical_normal"
+    android:layout_marginTop="@dimen/margin_vertical_normal"
+    card_view:cardElevation="1dp"
+    card_view:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cWhite"
+        android:orientation="vertical">
+
+        <CustomComponents.TextViewSemiBold
+            style="@style/AppTheme.TextViewH3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Review Pembeli" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cBackgroundGrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/padding_large"
+                android:orientation="vertical">
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH3.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_small_green"
+                    android:drawableRight="@drawable/ic_grade_white_24dp"
+                    android:drawableEnd="@drawable/ic_grade_white_24dp"
+                    android:drawablePadding="@dimen/padding_horizontal_small"
+                    android:padding="@dimen/padding_small"
+                    android:layout_gravity="center_horizontal"
+                    android:text="4.3"/>
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH6.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_vertical_normal"
+                    android:layout_marginBottom="@dimen/margin_vertical_normal"
+                    android:text="4 Reviews"/>
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH4.Blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Lihat Semua Review"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/cBackgroundGrey"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/padding_large"
+                android:orientation="vertical">
+
+                <CustomComponents.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="32sp"
+                    android:text="3"/>
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH6.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_vertical_normal"
+                    android:layout_marginBottom="@dimen/margin_vertical_normal"
+                    android:text="@string/details_label_qanda"/>
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH4.Blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/details_label_moreqanda"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cBackgroundGrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/padding_horizontal_normal"
+            android:paddingLeft="@dimen/padding_horizontal_normal"
+            android:paddingTop="@dimen/padding_vertical_small"
+            android:paddingBottom="@dimen/padding_vertical_small"
+            android:orientation="vertical">
+
+            <CustomComponents.TextViewSemiBold
+                style="@style/AppTheme.TextViewH5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_vertical_small"
+                android:layout_marginBottom="@dimen/padding_vertical_small"
+                android:text="Top Review"/>
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="product quality is not good"
+                android:layout_marginBottom="@dimen/margin_horizontal_xsmall"/>
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH6.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="by Abhi on Jul 17, 2017"/>
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH5.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_vertical_small"
+                android:layout_marginBottom="@dimen/margin_vertical_small"
+                android:text="product quality is not too good"/>
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH4.Blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_vertical_normal"
+                android:paddingBottom="@dimen/padding_vertical_normal"
+                android:text="Lihat Semua Review" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cBackgroundGrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/padding_horizontal_normal"
+            android:paddingLeft="@dimen/padding_horizontal_normal"
+            android:paddingTop="@dimen/padding_vertical_small"
+            android:paddingBottom="@dimen/padding_vertical_small"
+            android:orientation="vertical">
+
+            <CustomComponents.TextViewSemiBold
+                style="@style/AppTheme.TextViewH5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_vertical_small"
+                android:layout_marginBottom="@dimen/margin_vertical_xsmall"
+                android:text="Top Question"/>
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH6.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By Varun | 25 Jun, 2017"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_vertical_normal"
+                android:paddingBottom="@dimen/padding_vertical_normal"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH4.Blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_vertical_normal"
+                android:paddingBottom="@dimen/padding_vertical_normal"
+                android:text="@string/details_label_moreqanda" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
