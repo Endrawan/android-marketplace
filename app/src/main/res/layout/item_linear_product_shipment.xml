@@ -36,6 +36,8 @@
             <CustomComponents.TextView
                 android:id="@+id/nameProduct"
                 style="@style/AppTheme.TextViewH3"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="Aashish Fabrics Cotton Regular Tops" />

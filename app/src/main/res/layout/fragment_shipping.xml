@@ -14,13 +14,26 @@
         android:text="Lokasi Pengiriman"
         android:textAllCaps="true" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_horizontal_normal"
-        android:layout_marginRight="@dimen/margin_horizontal_normal"
-        android:clipToPadding="false" />
+        android:paddingLeft="@dimen/padding_horizontal_normal"
+        android:paddingRight="@dimen/padding_horizontal_normal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            />
+
+        <include
+            android:id="@+id/addressError"
+            android:visibility="gone"
+            layout="@layout/view_not_found" />
+
+    </FrameLayout>
+
 
     <FrameLayout
         android:id="@+id/newAddressPanel"
@@ -52,11 +65,23 @@
         android:text="Jasa Pengiriman"
         android:textAllCaps="true" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerViewProducts"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clipToPadding="false"
-        android:paddingBottom="@dimen/padding_vertical_xsmall" />
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/padding_vertical_xsmall" />
+
+        <include
+            android:id="@+id/courierError"
+            android:visibility="gone"
+            layout="@layout/view_not_found" />
+
+    </FrameLayout>
+
 
 </LinearLayout>
