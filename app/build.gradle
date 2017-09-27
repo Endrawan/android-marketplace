@@ -24,6 +24,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
 
+    compile 'com.clarifai.clarifai-api2:core:2.2.12'
+
+    // Firebase
     compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support:design:26.1.0'
     compile 'com.android.support:support-core-utils:26.1.0'
@@ -39,9 +42,6 @@ dependencies {
     compile 'me.relex:circleindicator:1.2.2@aar'
     compile 'com.midtrans:uikit:1.9.5-SANDBOX'
     compile 'com.google.android:flexbox:0.3.0'
-    compile 'com.clarifai.clarifai-api2:core:2.2.12'
-
-    // Firebase
     compile 'com.google.firebase:firebase-auth:11.4.0'
 }
 

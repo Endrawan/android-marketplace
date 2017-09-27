@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tabs>
     <tab
-        icon="@drawable/home"
+        icon="@drawable/ic_home_black_24dp"
         id="@+id/home"
-        title="Beranda"
-        inActiveColor="#B4BECC" />
+        inActiveColor="#B4BECC"
+        title="Beranda" />
     <tab
-        icon="@drawable/categories"
+        icon="@drawable/ic_categories_black_24dp"
         id="@+id/categories"
-        title="Kategori"
-        inActiveColor="#B4BECC" />
+        inActiveColor="#B4BECC"
+        title="Kategori" />
     <tab
         icon="@drawable/cart"
         id="@+id/cart"
-        title="Keranjang"
-        inActiveColor="#B4BECC" />
+        inActiveColor="#B4BECC"
+        title="Keranjang" />
     <tab
-        icon="@drawable/account"
+        icon="@drawable/ic_user_black_24dp"
         id="@+id/account"
-        title="Akun"
-        inActiveColor="#B4BECC" />
+        inActiveColor="#B4BECC"
+        title="Akun" />
 </tabs>
 

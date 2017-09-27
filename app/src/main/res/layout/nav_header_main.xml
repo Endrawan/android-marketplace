@@ -72,7 +72,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/wishlist"
+                android:src="@drawable/ic_wishlist_black_24dp"
                 android:tint="@color/c3"
                 android:contentDescription="@string/content_description"
                 android:layout_gravity="center_horizontal"/>
