@@ -101,6 +101,9 @@
     <style name="AppTheme.TextViewH3.Grey" parent="AppTheme.TextViewH3">
         <item name="android:textColor">@color/cGrey</item>
     </style>
+    <style name="AppTheme.TextViewH3.Primary" parent="AppTheme.TextViewH3">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
 
     <style name="AppTheme.CurrencyTV.H3" parent="AppTheme.TextViewH3">
         <item name="android:textColor">@color/colorPrimary</item>
@@ -117,6 +120,10 @@
 
     <style name="AppTheme.TextViewH4.Grey" parent="AppTheme.TextViewH4">
         <item name="android:textColor">@color/cGrey</item>
+    </style>
+
+    <style name="AppTheme.TextViewH4.Blue" parent="AppTheme.TextViewH4">
+        <item name="android:textColor">@color/cBlue</item>
     </style>
 
     <style name="AppTheme.TextViewH4.Primary" parent="AppTheme.TextViewH4">
@@ -140,6 +147,14 @@
         <item name="android:textColor">@color/cGrey</item>
     </style>
 
+    <style name="AppTheme.TextViewH5.Primary" parent="AppTheme.TextViewH5">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.TextViewH5.Blue" parent="AppTheme.TextViewH5">
+        <item name="android:textColor">@color/cBlue</item>
+    </style>
+
     <!-- H6 -->
     <style name="AppTheme.TextViewH6" parent="AppTheme.TextView">
         <item name="android:textSize">12sp</item>
@@ -151,6 +166,14 @@
 
     <style name="AppTheme.TextViewH6.Grey" parent="AppTheme.TextViewH6">
         <item name="android:textColor">@color/cGrey</item>
+    </style>
+
+    <style name="AppTheme.TextViewH7" parent="AppTheme.TextView">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="AppTheme.TextViewH7.Light" parent="AppTheme.TextViewH7">
+        <item name="android:textColor">@color/cWhite</item>
     </style>
 
     <style name="AppTheme.TextView.Toolbar" parent="AppTheme">
@@ -209,5 +232,17 @@
     <!-- Indicator Section -->
     <style name="AppTheme.Indicator" parent="AppTheme">
         <item name="indicatorColor">@color/colorPrimary</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">gone</item>
     </style>
+
+    <!-- Animation Section -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <!-- End Animation Section -->
 </resources>

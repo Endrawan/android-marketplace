@@ -1,83 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cWhite"
     android:orientation="vertical">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="128dp">
+        android:layout_height="192dp">
 
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="@string/content_description" />
+            android:contentDescription="@string/content_description"/>
 
         <ImageView
             android:id="@+id/wishlist"
             android:layout_width="16dp"
             android:layout_height="16dp"
             android:layout_gravity="end|top"
-            android:layout_margin="@dimen/margin_normal"
-            android:contentDescription="@string/content_description" />
+            android:layout_margin="@dimen/margin_small"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/heart_unavailable" />
 
         <CustomComponents.TextView
             android:id="@+id/discountPercent"
-            style="@style/AppTheme.TextViewH6"
+            style="@style/AppTheme.TextViewH7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/cBackgroundGrey"
             android:layout_gravity="bottom|start"
-            android:layout_margin="@dimen/margin_normal"/>
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/background_small_grey"
+            android:paddingBottom="@dimen/padding_vertical_xxsmall"
+            android:paddingLeft="@dimen/padding_horizontal_xsmall"
+            android:paddingRight="@dimen/padding_horizontal_xsmall"
+            android:paddingTop="@dimen/padding_vertical_xxsmall" />
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small">
+
         <CustomComponents.TextView
             android:id="@+id/name"
-            style="@style/AppTheme.TextViewH3"
+            style="@style/AppTheme.TextViewH4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:maxLines="2"/>
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:maxLines="2" />
 
         <CustomComponents.TextViewSemiBold
             android:id="@+id/realPrice"
-            style="@style/AppTheme.TextViewH3"
+            style="@style/AppTheme.TextViewH4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_vertical_small" />
 
         <CustomComponents.TextView
             android:id="@+id/beforeDiscPrice"
-            style="@style/AppTheme.TextViewH4.Grey"
+            style="@style/AppTheme.TextViewH6.Grey"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_vertical_small" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
+
             <CustomComponents.TextView
                 android:id="@+id/rating"
-                style="@style/AppTheme.TextViewH5.Light"
+                style="@style/AppTheme.TextViewH7.Light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/cGreen"
-                android:drawableRight="@drawable/facebook_logo"
-                android:drawableEnd="@drawable/facebook_logo"/>
+                android:background="@drawable/background_small_green"
+                android:drawableEnd="@drawable/ic_grade_white_8dp"
+                android:drawablePadding="@dimen/margin_horizontal_xsmall"
+                android:drawableRight="@drawable/ic_grade_white_8dp"
+                android:paddingBottom="@dimen/padding_vertical_xxsmall"
+                android:paddingLeft="@dimen/padding_horizontal_xsmall"
+                android:paddingRight="@dimen/padding_horizontal_xsmall"
+                android:paddingTop="@dimen/padding_vertical_xxsmall" />
+
             <CustomComponents.TextView
                 android:id="@+id/ratingCount"
-                style="@style/AppTheme.TextViewH4"
+                style="@style/AppTheme.TextViewH5.Grey"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_horizontal_small"
+                android:layout_marginStart="@dimen/margin_horizontal_small" />
         </LinearLayout>
     </LinearLayout>
 
     <CustomComponents.TextView
         android:id="@+id/note"
-        style="@style/AppTheme.TextViewH4"
+        style="@style/AppTheme.TextViewH5.Blue"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small" />
 </LinearLayout>
