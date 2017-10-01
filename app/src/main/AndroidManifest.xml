@@ -35,7 +35,7 @@
         <activity
             android:name=".ExampleActivity"
             android:label="@string/title_activity_example"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".MenuActivity"
             android:label="@string/app_name"
@@ -50,7 +50,8 @@
         <activity android:name=".CheckOutActivity" />
         <activity android:name=".SellProductActivity" />
         <activity android:name=".MultiFunctionActivity" />
-        <activity android:name=".SettingsActivity"/>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".AuthActivity"/>
     </application>
 
 </manifest>

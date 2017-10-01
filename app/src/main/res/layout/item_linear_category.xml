@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_vertical_normal"
+        android:paddingRight="@dimen/padding_horizontal_normal"
+        android:paddingLeft="@dimen/padding_horizontal_normal">
+
+        <ImageView
+            android:id="@+id/mStatus"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:contentDescription="@string/content_description"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <CustomComponents.TextViewSemiBold
+            android:id="@+id/mCategory"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/mStatus"
+            android:layout_toStartOf="@+id/mStatus"
+            android:paddingLeft="@dimen/padding_horizontal_normal"
+            android:paddingRight="@dimen/padding_horizontal_normal" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/subCategoriesRV"
+        android:layout_margin="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

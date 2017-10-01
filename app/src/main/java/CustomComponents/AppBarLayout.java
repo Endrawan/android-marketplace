@@ -4,13 +4,13 @@ import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;
 import android.util.AttributeSet;
 
-import com.endrawan.marketplace.behaviors.AppBarBehavior;
+import com.endrawan.marketplace.behaviors.ViewUpSnackbar;
 
 /**
  * Endrawan made this on 2017-08-19.
  */
 
-@CoordinatorLayout.DefaultBehavior(AppBarBehavior.class)
+@CoordinatorLayout.DefaultBehavior(ViewUpSnackbar.class)
 public class AppBarLayout extends android.support.design.widget.AppBarLayout {
     public AppBarLayout(Context context) {
         super(context);

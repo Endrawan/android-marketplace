@@ -1,11 +1,16 @@
 package CustomComponents;
 
 import android.content.Context;
+import android.support.design.widget.CoordinatorLayout;
 import android.util.AttributeSet;
+
+import com.endrawan.marketplace.behaviors.ViewUpSnackbar;
 
 /**
  * Endrawan made this on 2017-09-25.
  */
+
+@CoordinatorLayout.DefaultBehavior(ViewUpSnackbar.class)
 public class FrameLayout extends android.widget.FrameLayout{
     public FrameLayout(Context context) {
         super(context);

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.endrawan.marketplace.AuthActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <CustomComponents.FrameLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="@color/cWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CustomComponents.TextView
+                android:id="@+id/signIn"
+                style="@style/AppTheme.TextViewH4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_clickable"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="SIGN IN" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/cBackgroundGrey" />
+
+            <CustomComponents.TextView
+                android:id="@+id/signUp"
+                style="@style/AppTheme.TextViewH4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_clickable"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="SIGN UP" />
+        </LinearLayout>
+    </CustomComponents.FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

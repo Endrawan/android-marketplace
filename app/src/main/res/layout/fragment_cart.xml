@@ -60,24 +60,26 @@
                     android:text="Tap an item below to edit or remove" />
             </LinearLayout>
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/mRecyclerView"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="256dp"
-                android:clipToPadding="false"
-                android:overScrollMode="never"
-                android:paddingLeft="@dimen/padding_horizontal_normal"
-                android:paddingRight="@dimen/padding_horizontal_normal" />
+                android:layout_height="256dp">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    android:paddingLeft="@dimen/padding_horizontal_normal"
+                    android:paddingRight="@dimen/padding_horizontal_normal" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading"
+                    style="@style/AppTheme.Indicator"/>
+            </FrameLayout>
 
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
-
-    <!--<CustomComponents.Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:text="Beli Sekarang" />-->
 
     <LinearLayout
         android:id="@+id/payItems"

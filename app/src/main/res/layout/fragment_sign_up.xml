@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="56dp"
+    android:background="@drawable/sign_in_background"
+    android:paddingBottom="@dimen/sign_in_vertical_margin"
+    android:paddingLeft="@dimen/sign_in_horizontal_margin"
+    android:paddingRight="@dimen/sign_in_horizontal_margin"
+    android:paddingTop="@dimen/sign_in_vertical_margin"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/sign_in_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <CustomComponents.FacebookButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/facebook_logo"
+            android:drawableStart="@drawable/facebook_logo"
+            android:text="@string/sign_in_facebook" />
+
+        <CustomComponents.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/sign_in_row"
+            android:text="@string/sign_in_or" />
+
+        <CustomComponents.EditText
+            android:id="@+id/mUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/username"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/username"
+            android:hint="@string/sign_in_username"
+            android:inputType="textPersonName"
+            android:paddingBottom="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:textSize="14sp" />
+
+        <CustomComponents.EditText
+            android:id="@+id/mEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/email"
+            android:hint="@string/sign_up_email"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:textSize="14sp" />
+
+        <CustomComponents.EditText
+            android:id="@+id/mPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/password"
+            android:hint="@string/sign_in_password"
+            android:inputType="textPassword"
+            android:paddingBottom="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CustomComponents.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_terms"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <CustomComponents.RoundedButton
+            android:id="@+id/mRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up" />
+
+    </LinearLayout>
+
+</RelativeLayout>

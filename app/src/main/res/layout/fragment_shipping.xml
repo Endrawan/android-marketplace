@@ -14,7 +14,7 @@
         android:text="Lokasi Pengiriman"
         android:textAllCaps="true" />
 
-    <FrameLayout
+    <!--<FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/padding_horizontal_normal"
@@ -31,6 +31,24 @@
             android:id="@+id/addressError"
             android:visibility="gone"
             layout="@layout/view_not_found" />
+
+    </FrameLayout>-->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_horizontal_normal"
+        android:paddingRight="@dimen/padding_horizontal_normal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/addressError"
+            style="@style/AppTheme.Indicator"/>
 
     </FrameLayout>
 
@@ -65,7 +83,7 @@
         android:text="Jasa Pengiriman"
         android:textAllCaps="true" />
 
-    <FrameLayout
+    <!--<FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -81,7 +99,23 @@
             android:visibility="gone"
             layout="@layout/view_not_found" />
 
-    </FrameLayout>
+    </FrameLayout>-->
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_horizontal_normal"
+        android:paddingRight="@dimen/padding_horizontal_normal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/courierError"
+            style="@style/AppTheme.Indicator"/>
+
+    </FrameLayout>
 
 </LinearLayout>
