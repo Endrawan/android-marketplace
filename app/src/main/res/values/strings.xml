@@ -68,4 +68,8 @@
 
     <string name="details_label_moreqanda">Lihat Semua Q&amp;A</string>
     <string name="details_label_qanda">Question &amp; Answers</string>
+
+    <!-- Settings -->
+    <string name="account_label_protection">Data kamu selalu dirahasiakan dan tidak akan kami beritahukan kepada pihak ketiga</string>
+    <string name="account_button_done">Simpan</string>
 </resources>

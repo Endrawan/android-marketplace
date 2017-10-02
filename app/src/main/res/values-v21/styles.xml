@@ -8,6 +8,7 @@
 
         <item name="android:windowContentTransitions">true</item>
         <item name="actionMenuTextColor">@color/cWhite</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
 
         <!--  Action Mode Style -->
         <item name="windowActionModeOverlay">true</item>
@@ -45,6 +46,13 @@
         <item name="android:paddingLeft">@dimen/padding_horizontal_small</item>
         <item name="android:paddingTop">@dimen/padding_vertical_small</item>
         <item name="android:paddingBottom">@dimen/margin_vertical_small</item>
+    </style>
+
+    <style name="AppTheme.Button.Primary" parent="AppTheme.Button">
+        <item name="android:background">@drawable/button_primary</item>
+    </style>
+    <style name="AppTheme.Button.Inverse" parent="AppTheme.Button">
+        <item name="android:background">@drawable/button_inverse</item>
     </style>
 
     <style name="AppTheme.Button.H5" parent="AppTheme.Button">

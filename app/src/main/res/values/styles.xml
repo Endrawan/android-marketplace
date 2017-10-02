@@ -89,6 +89,10 @@
         <item name="android:textColor">@color/cWhite</item>
     </style>
 
+    <style name="AppTheme.TextViewH2.Grey" parent="AppTheme.TextViewH2">
+        <item name="android:textColor">@color/cGrey</item>
+    </style>
+
     <!-- H3 -->
     <style name="AppTheme.TextViewH3" parent="AppTheme.TextView">
         <item name="android:textSize">16sp</item>

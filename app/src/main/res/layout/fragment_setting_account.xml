@@ -17,6 +17,16 @@
             android:contentDescription="@string/content_description"
             android:src="@color/cBlue" />
 
+        <ImageView
+            android:id="@+id/changeBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="@dimen/margin_normal"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_edit_black_16dp"
+            android:tint="@color/cWhite" />
+
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profilePic"
@@ -26,13 +36,19 @@
             android:src="@color/cBackgroundGrey" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:id="@+id/changeProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/padding_small"
+            android:scaleType="center"
+            android:src="@drawable/ic_edit_black_16dp"
             android:tint="@color/cWhite"
-            android:src="@drawable/ic_edit_black_24dp"/>
+            app:elevation="0dp"
+            app:fabSize="mini" />
 
     </FrameLayout>
 
@@ -42,260 +58,46 @@
         android:background="@color/cWhite"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/locationPanel"
+        <include
+            android:id="@+id/name"
+            layout="@layout/view_text_form" />
+
+        <include
+            android:id="@+id/born"
+            layout="@layout/view_text_form" />
+
+        <include
+            android:id="@+id/gender"
+            layout="@layout/view_text_form" />
+
+        <include
+            android:id="@+id/description"
+            layout="@layout/view_text_form" />
+
+        <include
+            android:id="@+id/note"
+            layout="@layout/view_text_form" />
+
+        <CustomComponents.TextView
+            style="@style/AppTheme.TextViewH6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:orientation="vertical"
-            android:padding="@dimen/padding_normal">
+            android:maxLines="2"
+            android:paddingLeft="@dimen/padding_horizontal_normal"
+            android:paddingRight="@dimen/padding_horizontal_normal"
+            android:paddingTop="@dimen/padding_vertical_normal"
+            android:text="@string/account_label_protection" />
 
-            <CustomComponents.TextView
-                android:id="@+id/locationLabel"
-                style="@style/AppTheme.TextViewH4.Grey"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nama Lokasi" />
-
-            <CustomComponents.TextViewSemiBold
-                android:id="@+id/locationVal"
-                style="@style/AppTheme.TextViewH3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_vertical_xsmall"
-                android:singleLine="true"
-                android:text="Ketik Lokasi" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/cBackgroundGrey" />
-
-        <LinearLayout
-            android:id="@+id/namePanel"
+        <CustomComponents.Button
+            android:id="@+id/submit"
+            style="@style/AppTheme.Button.Primary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:orientation="vertical"
-            android:padding="@dimen/padding_normal">
-
-            <CustomComponents.TextView
-                android:id="@+id/nameLabel"
-                style="@style/AppTheme.TextViewH4.Grey"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nama Penerima" />
-
-            <CustomComponents.TextViewSemiBold
-                android:id="@+id/nameVal"
-                style="@style/AppTheme.TextViewH3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_vertical_xsmall"
-                android:singleLine="true"
-                android:text="Tulis Namamu Disini" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/cBackgroundGrey" />
-
-
-        <LinearLayout
-            android:id="@+id/phonePanel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:orientation="vertical"
-            android:padding="@dimen/padding_normal">
-
-            <CustomComponents.TextView
-                android:id="@+id/phoneLabel"
-                style="@style/AppTheme.TextViewH4.Grey"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nomer Telepon" />
-
-            <CustomComponents.TextViewSemiBold
-                android:id="@+id/phoneVal"
-                style="@style/AppTheme.TextViewH3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_vertical_xsmall"
-                android:singleLine="true"
-                android:text="Ketik Nomer Telepon" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/cBackgroundGrey" />
-
-        <LinearLayout
-            android:id="@+id/provincePanel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:orientation="vertical"
-            android:padding="@dimen/padding_normal">
-
-            <CustomComponents.TextView
-                android:id="@+id/provinceLabel"
-                style="@style/AppTheme.TextViewH4.Grey"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Provinsi" />
-
-            <CustomComponents.TextViewSemiBold
-                android:id="@+id/provinceVal"
-                style="@style/AppTheme.TextViewH3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_vertical_xsmall"
-                android:singleLine="true"
-                android:text="Pilih Provinsi" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/cBackgroundGrey" />
-
-        <LinearLayout
-            android:id="@+id/cityPanel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_normal"
+            android:gravity="center"
             android:padding="@dimen/padding_normal"
-            android:visibility="gone">
-
-            <CustomComponents.TextView
-                android:id="@+id/cityLabel"
-                style="@style/AppTheme.TextViewH4.Grey"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Kota/Kabupaten" />
-
-            <CustomComponents.TextViewSemiBold
-                android:id="@+id/cityVal"
-                style="@style/AppTheme.TextViewH3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_vertical_xsmall"
-                android:singleLine="true"
-                android:text="Pilih Kota/Kabupaten" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/cBackgroundGrey" />
-
-        <LinearLayout
-            android:id="@+id/collapsePanel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:visibility="gone">
-
-            <LinearLayout
-                android:id="@+id/subDistrictPanel"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:padding="@dimen/padding_normal">
-
-                <CustomComponents.TextView
-                    android:id="@+id/subDistrictLabel"
-                    style="@style/AppTheme.TextViewH4.Grey"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Kecamatan" />
-
-                <CustomComponents.TextViewSemiBold
-                    android:id="@+id/subDistrictVal"
-                    style="@style/AppTheme.TextViewH3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_vertical_xsmall"
-                    android:singleLine="true"
-                    android:text="Pilih Kecamatan" />
-            </LinearLayout>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="@color/cBackgroundGrey" />
-
-            <LinearLayout
-                android:id="@+id/postalPanel"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:padding="@dimen/padding_normal">
-
-                <CustomComponents.TextView
-                    android:id="@+id/postalLabel"
-                    style="@style/AppTheme.TextViewH4.Grey"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Kode Pos" />
-
-                <CustomComponents.TextViewSemiBold
-                    android:id="@+id/postalVal"
-                    style="@style/AppTheme.TextViewH3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_vertical_xsmall"
-                    android:singleLine="true"
-                    android:text="Ketik Kode" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/cBackgroundGrey" />
-
-        <LinearLayout
-            android:id="@+id/addressPanel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:orientation="vertical"
-            android:padding="@dimen/padding_normal">
-
-            <CustomComponents.TextView
-                android:id="@+id/addressLabel"
-                style="@style/AppTheme.TextViewH4.Grey"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Alamat" />
-
-            <CustomComponents.TextViewSemiBold
-                android:id="@+id/addressVal"
-                style="@style/AppTheme.TextViewH3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_vertical_xsmall"
-                android:singleLine="true"
-                android:text="Ketik Alamat Anda" />
-        </LinearLayout>
+            android:text="@string/account_button_done"
+            android:textAppearance="@style/AppTheme.TextViewH3.Light" />
     </LinearLayout>
 
 </LinearLayout>
