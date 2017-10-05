@@ -39,9 +39,8 @@
             android:layout_height="wrap_content"
             android:hint="Contoh, IPhone 5S Gold 128GB"
             android:inputType="textPersonName">
-            <requestFocus/>
+
+            <requestFocus />
         </CustomComponents.EditText>
     </LinearLayout>
-
-
 </LinearLayout>

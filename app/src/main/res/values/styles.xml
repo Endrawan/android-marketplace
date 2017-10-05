@@ -209,7 +209,9 @@
     </style>
 
     <!-- EditText Section -->
-    <style name="AppTheme.EditText" parent="AppTheme"/>
+    <style name="AppTheme.EditText" parent="AppTheme">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 
     <style name="AppTheme.EditText.Light" parent="AppTheme.EditText">
         <item name="android:textColor">@color/cBlack</item>

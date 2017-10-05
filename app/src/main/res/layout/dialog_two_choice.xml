@@ -46,9 +46,9 @@
                 android:id="@+id/falseText"
                 style="@style/AppTheme.TextViewH3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_marginTop="@dimen/margin_vertical_normal"
-                android:gravity="center_horizontal"
+                android:gravity="center"
                 android:maxLines="2" />
 
         </LinearLayout>
@@ -82,9 +82,9 @@
                 android:id="@+id/trueText"
                 style="@style/AppTheme.TextViewH3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_marginTop="@dimen/margin_vertical_normal"
-                android:gravity="center_horizontal"
+                android:gravity="center"
                 android:maxLines="2" />
 
         </LinearLayout>

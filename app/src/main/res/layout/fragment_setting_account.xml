@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="com.endrawan.marketplace.SettingAccountFragment">
+    tools:context=".fragments.settings.SettingAccountFragment">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -16,6 +16,11 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/content_description"
             android:src="@color/cBlue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_header_mask"/>
 
         <ImageView
             android:id="@+id/changeBackground"
