@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "327859467434-f0oq9hp11t82cnietebsp0q759jo34uc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.endrawan.marketplace",
+            "certificate_hash": "b311ad196a6a6db80a350302671784e8ff565c64"
+          }
+        },
+        {
           "client_id": "327859467434-vtko6apf39dnquk4hnfu0238ohhphb84.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327859467434-vtko6apf39dnquk4hnfu0238ohhphb84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

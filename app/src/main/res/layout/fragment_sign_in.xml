@@ -1,105 +1,187 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="56dp"
+    android:background="@drawable/sign_in_background"
     android:paddingBottom="@dimen/sign_in_vertical_margin"
     android:paddingLeft="@dimen/sign_in_horizontal_margin"
     android:paddingRight="@dimen/sign_in_horizontal_margin"
     android:paddingTop="@dimen/sign_in_vertical_margin"
-    android:background="@drawable/sign_in_background"
     tools:context=".SignInActivity">
 
     <ImageView
         android:layout_width="128dp"
         android:layout_height="128dp"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:contentDescription="@string/sign_in_logo"/>
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/sign_in_logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true">
-        <CustomComponents.FacebookButton
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/facebook_logo"
-            android:drawableLeft="@drawable/facebook_logo"
-            android:text="@string/sign_in_facebook"/>
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="@dimen/margin_vertical_small"
+                card_view:cardCornerRadius="4dip"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/signInGoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <FrameLayout
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_horizontal_normal"
+                        android:layout_marginRight="@dimen/margin_horizontal_normal"
+                        android:padding="@dimen/padding_small">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/content_description"
+                            android:src="@drawable/googleg_color" />
+                    </FrameLayout>
+
+                    <CustomComponents.TextView
+                        style="@style/AppTheme.TextViewH4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Sign in dengan Google" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="@dimen/margin_vertical_xxsmall"
+                android:background="@color/cFacebook"
+                card_view:cardCornerRadius="4dip"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/signInFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cFacebook"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_horizontal_normal"
+                        android:layout_marginRight="@dimen/margin_horizontal_normal"
+                        android:padding="@dimen/padding_small">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/content_description"
+                            android:src="@drawable/facebook_logo" />
+                    </FrameLayout>
+
+                    <CustomComponents.TextView
+                        style="@style/AppTheme.TextViewH4.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Sign in dengan Facebook" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
 
         <CustomComponents.TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_in_or"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/sign_in_row"/>
+            android:layout_marginTop="@dimen/sign_in_row"
+            android:text="@string/sign_in_or" />
 
         <CustomComponents.EditText
             android:id="@+id/mUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp"
-            android:paddingTop="24dp"
-            android:paddingBottom="24dp"
-            android:hint="@string/sign_in_username"
-            android:drawableStart="@drawable/username"
             android:drawableLeft="@drawable/username"
             android:drawablePadding="8dp"
-            android:inputType="textPersonName"/>
+            android:drawableStart="@drawable/username"
+            android:hint="@string/sign_in_username"
+            android:inputType="textPersonName"
+            android:paddingBottom="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:textSize="14sp" />
 
         <CustomComponents.EditText
             android:id="@+id/mPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp"
-            android:paddingTop="24dp"
-            android:paddingBottom="24dp"
-            android:hint="@string/sign_in_password"
-            android:drawableStart="@drawable/password"
             android:drawableLeft="@drawable/password"
             android:drawablePadding="8dp"
-            android:inputType="textPassword"/>
+            android:drawableStart="@drawable/password"
+            android:hint="@string/sign_in_password"
+            android:inputType="textPassword"
+            android:paddingBottom="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:textSize="14sp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="36dp">
+            android:layout_marginBottom="36dp"
+            android:layout_marginTop="8dp">
+
             <CheckBox
                 android:id="@+id/mRemember"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true" />
+
             <CustomComponents.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/mRemember"
-                android:layout_toEndOf="@+id/mRemember"
                 android:layout_centerVertical="true"
-                android:textSize="12sp"
-                android:text="@string/sign_in_remember"/>
+                android:layout_toEndOf="@+id/mRemember"
+                android:layout_toRightOf="@+id/mRemember"
+                android:text="@string/sign_in_remember"
+                android:textSize="12sp" />
+
             <CustomComponents.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_in_forget"
-                android:textSize="12sp"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/sign_in_forget"
+                android:textSize="12sp" />
         </RelativeLayout>
 
         <CustomComponents.RoundedButton
             android:id="@+id/mLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sign_in"/>
+            android:text="@string/sign_in" />
     </LinearLayout>
 
 </RelativeLayout>
