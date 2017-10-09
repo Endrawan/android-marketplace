@@ -59,4 +59,9 @@
         <item name="android:textAppearance">@style/AppTheme.TextViewH5.Light</item>
     </style>
 
+    <style name="AppTheme.Button.Facebook" parent="AppTheme.Button">
+        <item name="android:background">@color/cFacebook</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>

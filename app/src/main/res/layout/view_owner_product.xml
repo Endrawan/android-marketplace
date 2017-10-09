@@ -33,6 +33,7 @@
                 android:orientation="horizontal">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImg"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center_vertical"
@@ -47,20 +48,21 @@
                     android:orientation="vertical">
 
                     <CustomComponents.TextView
+                        android:id="@+id/profileName"
                         style="@style/AppTheme.TextViewH4"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="American Express" />
+                        android:layout_height="wrap_content" />
 
                     <CustomComponents.TextView
+                        android:id="@+id/profileLocation"
                         style="@style/AppTheme.TextViewH5.Grey"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_vertical_xsmall"
-                        android:layout_marginBottom="@dimen/margin_vertical_xsmall"
-                        android:text="Rp 20.000,-" />
+                        android:layout_marginBottom="@dimen/margin_vertical_xsmall" />
 
                     <CustomComponents.TextView
+                        android:id="@+id/profileMore"
                         style="@style/AppTheme.TextViewH5.Blue"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

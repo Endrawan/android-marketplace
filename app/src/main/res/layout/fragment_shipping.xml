@@ -41,13 +41,18 @@
         android:paddingLeft="@dimen/padding_horizontal_normal"
         android:paddingRight="@dimen/padding_horizontal_normal">
 
+        <include
+            android:id="@+id/addressError"
+            android:visibility="gone"
+            layout="@layout/view_not_found" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <com.wang.avi.AVLoadingIndicatorView
-            android:id="@+id/addressError"
+            android:id="@+id/addressLoading"
             style="@style/AppTheme.Indicator"/>
 
     </FrameLayout>
@@ -107,13 +112,18 @@
         android:paddingLeft="@dimen/padding_horizontal_normal"
         android:paddingRight="@dimen/padding_horizontal_normal">
 
+        <include
+            android:id="@+id/courierError"
+            android:visibility="gone"
+            layout="@layout/view_not_found" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerViewProducts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <com.wang.avi.AVLoadingIndicatorView
-            android:id="@+id/courierError"
+            android:id="@+id/courierLoading"
             style="@style/AppTheme.Indicator"/>
 
     </FrameLayout>
