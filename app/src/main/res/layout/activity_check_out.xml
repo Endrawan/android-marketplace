@@ -40,15 +40,6 @@
             android:layout_height="wrap_content" />
     </android.support.v4.widget.NestedScrollView>
 
-    <!--<CustomComponents.AppBarLayout
-        android:id="@+id/bottomBar"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_gravity="bottom"
-        android:background="@color/cWhite"
-        android:padding="8dp">
-
-    </CustomComponents.AppBarLayout>-->
     <FrameLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"

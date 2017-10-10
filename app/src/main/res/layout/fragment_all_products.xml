@@ -1,0 +1,177 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AllProductsFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <CustomComponents.TextView
+                android:id="@+id/searchKeyword"
+                style="@style/AppTheme.TextView.Toolbar"
+                android:layout_gravity="start"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cBackgroundGrey"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading"
+            style="@style/AppTheme.Indicator" />
+
+    </FrameLayout>
+
+    <!--<android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <CustomComponents.TextView
+                    android:id="@+id/searchCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CustomComponents.TextViewSemiBold
+                    android:id="@+id/searchKeyword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RVRelevance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_vertical_normal"
+                android:paddingTop="@dimen/padding_vertical_normal">
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_vertical_small"
+                    android:paddingLeft="@dimen/padding_horizontal_normal"
+                    android:paddingRight="@dimen/padding_horizontal_normal"
+                    android:text="@string/sponsored_ads" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/RVSponsored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>-->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginBottom="@dimen/margin_vertical_small"
+        android:layout_marginLeft="@dimen/margin_horizontal_xlarge"
+        android:layout_marginRight="@dimen/margin_horizontal_xlarge"
+        android:layout_marginTop="@dimen/margin_vertical_small"
+        android:background="@drawable/background_normall_black_ripple"
+        android:orientation="horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_vertical_small"
+                android:layout_marginEnd="@dimen/margin_horizontal_xxsmall"
+                android:layout_marginRight="@dimen/margin_horizontal_xxsmall"
+                android:layout_marginTop="@dimen/margin_vertical_small"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_sort_white_24dp" />
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH7.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/product_sort"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cBackgroundGrey" />
+
+        <LinearLayout
+            android:id="@+id/filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_vertical_small"
+                android:layout_marginEnd="@dimen/margin_horizontal_xxsmall"
+                android:layout_marginRight="@dimen/margin_horizontal_xxsmall"
+                android:layout_marginTop="@dimen/margin_vertical_small"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_filter_white_24dp" />
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextViewH7.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/product_filter"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>-->
+</android.support.design.widget.CoordinatorLayout>

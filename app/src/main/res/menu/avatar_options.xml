@@ -8,4 +8,8 @@
         android:id="@+id/notification"
         android:orderInCategory="101"
         android:title="Notifikasi"/>
+    <item
+        android:id="@+id/transaction"
+        android:orderInCategory="101"
+        android:title="Transaksi"/>
 </menu>

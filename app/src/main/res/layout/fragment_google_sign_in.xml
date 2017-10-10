@@ -12,7 +12,7 @@
         android:paddingBottom="@dimen/padding_vertical_large"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context="com.endrawan.marketplace.GoogleSignInFragment">
+        tools:context=".fragments.GoogleSignInFragment">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/photo"

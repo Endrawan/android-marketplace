@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:windowBackground">@color/cBackgroundGrey</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_chevron_left_white_24dp</item>
 
         <!--  Action Mode Style -->
         <item name="windowActionModeOverlay">true</item>
@@ -23,7 +24,7 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AppTheme.Toolbar" parent="AppTheme">
-        <item name="android:homeAsUpIndicator">@drawable/ic_chevron_left_black_24dp</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_chevron_left_white_24dp</item>
     </style>
 
     <style name="AppTheme.ToolbarWhite" parent="ThemeOverlay.AppCompat.Light">

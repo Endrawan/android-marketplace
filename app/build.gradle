@@ -23,9 +23,11 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
 
-    compile 'com.clarifai.clarifai-api2:core:2.2.12'
-
     // Dependency for Google Sign-In
+    
+
+    // Facebook SDK
+    compile 'com.clarifai.clarifai-api2:core:2.2.12'
     compile 'com.clarifai.clarifai-api2:core:2.2.12'
     compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support:design:26.1.0'
@@ -44,8 +46,6 @@ dependencies {
     compile 'com.google.firebase:firebase-auth:11.4.0'
     compile 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
     compile 'com.google.android.gms:play-services-auth:11.4.0'
-
-    // Facebook SDK
     compile 'com.facebook.android:facebook-login:[4,5)'
 }
 
