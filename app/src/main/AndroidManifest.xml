@@ -41,36 +41,6 @@
             </intent-filter>
         </activity>
 
-        <!-- Midtrans activities -->
-        <!--
-        <activity android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" />
-        <activity android:name="com.midtrans.sdk.uikit.activities.UserDetailsActivity"/>
-        <activity android:name="com.midtrans.sdk.uikit.activities.PaymentMethodsActivity"/>
-        <activity android:name="com.midtrans.sdk.uikit.views.creditcard.saved.SavedCreditCardActivity"/>
-        <activity android:name="com.midtrans.sdk.uikit.views.creditcard.details.CreditCardDetailsActivity"/>
-        <activity android:name="com.midtrans.sdk.uikit.views.webview.WebViewPaymentActivity"/>
-        <activity android:name="com.midtrans.sdk.uikit.views.status.PaymentStatusActivity"/>
-        <activity android:name="com.midtrans.sdk.uikit.views.banktransfer.list.BankTransferListActivity"/>
-        -->
-
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".ProfilActivity" />
-        <activity android:name=".SellItemActivity" />
-        <activity
-            android:name=".activity_sell.SellNameActivity"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".activity_sell.SellCategoryActivity"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".activity_sell.SellDescriptionActivity"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".activity_sell.DesctiptionETActivity"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".activity_sell.SellDetailsActivity" />
-        <activity android:name=".activity_sell.SellImageActivity" />
         <activity android:name=".ProductsActivity" />
         <activity
             android:name=".ExampleActivity"
