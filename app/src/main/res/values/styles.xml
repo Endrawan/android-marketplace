@@ -251,5 +251,10 @@
         <item name="android:windowEnterAnimation">@anim/slide_up</item>
         <item name="android:windowExitAnimation">@anim/slide_down</item>
     </style>
+
+    <style name="AppTheme.PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_animation</item>
+        <item name="android:windowExitAnimation">@anim/dialog_close_animation</item>
+    </style>
     <!-- End Animation Section -->
 </resources>

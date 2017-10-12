@@ -22,4 +22,5 @@
     <color name="cRed">#F44336</color>
     <color name="cBlue">#2196F3</color>
     <color name="cBorderBottom">#E0E0E0</color>
+    <color name="popup_background">@color/cWhite</color>
 </resources>
