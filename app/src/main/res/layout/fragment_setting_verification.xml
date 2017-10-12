@@ -40,7 +40,6 @@
             android:orientation="horizontal">
 
             <CustomComponents.TextView
-                android:id="@+id/countryCode"
                 style="@style/AppTheme.TextViewH3.Grey"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -63,7 +62,6 @@
     </android.support.v7.widget.CardView>
 
     <CustomComponents.TextView
-        android:id="@+id/warning"
         style="@style/AppTheme.TextViewH4.Grey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,7 +77,6 @@
         android:layout_margin="@dimen/margin_normal">
 
         <CustomComponents.Button
-            android:id="@+id/reset"
             style="@style/AppTheme.Button.Inverse"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -94,7 +91,6 @@
             android:layout_height="match_parent"/>
 
         <CustomComponents.Button
-            android:id="@+id/verif"
             style="@style/AppTheme.Button.Primary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

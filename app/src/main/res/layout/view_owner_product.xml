@@ -62,7 +62,6 @@
                         android:layout_marginBottom="@dimen/margin_vertical_xsmall" />
 
                     <CustomComponents.TextView
-                        android:id="@+id/profileMore"
                         style="@style/AppTheme.TextViewH5.Blue"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

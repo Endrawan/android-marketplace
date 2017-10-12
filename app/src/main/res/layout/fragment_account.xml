@@ -1,6 +1,5 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -33,9 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <include
-                    android:id="@+id/authPanel"
-                    layout="@layout/view_auth_panel" />
+                <include layout="@layout/view_auth_panel" />
 
                 <include
                     android:id="@+id/profilePanel"
@@ -82,9 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <include
-                    android:id="@+id/viewError"
-                    layout="@layout/view_not_found" />
+                <include layout="@layout/view_not_found" />
 
                 <include
                     android:id="@+id/viewContent"

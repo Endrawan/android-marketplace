@@ -3,13 +3,10 @@
     <color name="colorPrimary">#864d7f</color>
     <color name="colorPrimaryDark">@color/c1</color>
     <color name="colorAccent">@color/c2</color>
-    <color name="cTextColorHint">#A0A0A0</color>
 
     <color name="c1">#4e1e4a</color>
     <color name="c2">#864d7f</color>
     <color name="c3">#c9abc3</color>
-    <color name="c4">#e6e1dd</color>
-    <color name="c5">#decbc3</color>
 
     <color name="cBlur">#99FFFFFF</color>
     <color name="cBackgroundGrey">#EEEEEE</color>

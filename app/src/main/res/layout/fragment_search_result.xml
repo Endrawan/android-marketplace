@@ -84,7 +84,6 @@
                     android:text="@string/sponsored_ads" />
 
                 <android.support.v7.widget.RecyclerView
-                    android:id="@+id/RVSponsored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </LinearLayout>

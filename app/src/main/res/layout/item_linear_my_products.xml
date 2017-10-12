@@ -24,7 +24,6 @@
             android:contentDescription="@string/content_description" />
 
         <View
-            android:id="@+id/space"
             android:layout_width="@dimen/padding_horizontal_normal"
             android:layout_height="1dp"
             android:layout_gravity="center_vertical" />

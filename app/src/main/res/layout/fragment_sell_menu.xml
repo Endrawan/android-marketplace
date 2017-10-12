@@ -290,7 +290,6 @@
             android:background="@color/cBackgroundGrey" />
 
         <RelativeLayout
-            android:id="@+id/mSellSending"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
@@ -315,7 +314,6 @@
                     android:text="Pengiriman (Opsional)" />
 
                 <CustomComponents.TextViewSubText
-                    android:id="@+id/mShipping"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"

@@ -71,7 +71,6 @@
             android:text="Nama Anda"/>
 
         <CustomComponents.TextView
-            android:id="@+id/profilBio"
             style="@style/AppTheme.TextViewH4.Light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -40,7 +40,6 @@
             android:orientation="horizontal">
 
             <CustomComponents.TextView
-                android:id="@+id/countryCode"
                 style="@style/AppTheme.TextViewH3.Grey"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

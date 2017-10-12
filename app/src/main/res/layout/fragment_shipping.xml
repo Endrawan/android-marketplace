@@ -69,7 +69,6 @@
         android:padding="@dimen/padding_normal">
 
         <CustomComponents.TextViewSemiBold
-            android:id="@+id/newAddressVal"
             style="@style/AppTheme.TextViewH3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -77,7 +77,6 @@
         android:padding="@dimen/padding_normal">
 
         <CustomComponents.TextView
-            android:id="@+id/shipmentLabel"
             style="@style/AppTheme.TextViewH4.Grey"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

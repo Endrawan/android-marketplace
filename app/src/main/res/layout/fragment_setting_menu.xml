@@ -23,7 +23,6 @@
             android:paddingTop="@dimen/padding_vertical_normal">
 
             <ImageView
-                android:id="@+id/accountImage"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center_vertical"
@@ -81,7 +80,6 @@
             android:paddingTop="@dimen/padding_vertical_normal">
 
             <ImageView
-                android:id="@+id/settingImage"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center_vertical"
@@ -303,7 +301,6 @@
             android:paddingTop="@dimen/padding_vertical_normal">
 
             <ImageView
-                android:id="@+id/passwordImage"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center_vertical"

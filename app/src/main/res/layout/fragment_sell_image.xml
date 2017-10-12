@@ -16,7 +16,6 @@
         android:text="Upload gambar jualan kamu" />
 
     <View
-        android:id="@+id/justMargin"
         android:layout_width="match_parent"
         android:layout_height="16dp" />
 

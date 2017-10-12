@@ -5,13 +5,10 @@
     <dimen name="size_image_medium">56dp</dimen>
     <dimen name="size_image_large">72dp</dimen>
 
-    <dimen name="normal">16dp</dimen>
     <dimen name="font_size_normal">12sp</dimen>
 
     <dimen name="button_height_normal">36dp</dimen>
 
-    <dimen name="margin_top">16dp</dimen>
-    <dimen name="margin_bottom">16dp</dimen>
     <dimen name="margin_normal">16dp</dimen>
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_horizontal_xxsmall">2dp</dimen>
@@ -32,7 +29,6 @@
     <dimen name="padding_normal">16dp</dimen>
     <dimen name="padding_small">8dp</dimen>
     <dimen name="padding_xsmall">4dp</dimen>
-    <dimen name="padding_xxsmall">2dp</dimen>
     <dimen name="padding_horizontal_xlarge">32dp</dimen>
     <dimen name="padding_horizontal_large">24dp</dimen>
     <dimen name="padding_horizontal_normal">16dp</dimen>
@@ -46,15 +42,12 @@
     <dimen name="padding_vertical_xxsmall">2dp</dimen>
 
     <!-- Button Customs -->
-    <dimen name="padding_button_horizontal_large">36dp</dimen>
-    <dimen name="padding_button_vertical">8dp</dimen>
     <dimen name="padding_rounded_button_horizontal">24dp</dimen>
     <dimen name="padding_rounded_button_vertical">8dp</dimen>
 
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="search_view_inset">8dp</dimen>
     <!-- Edit Text Customs -->
     <dimen name="padding_edittext_vertical">12dp</dimen>
     <dimen name="padding_edittext_horizontal">16dp</dimen>
@@ -65,18 +58,10 @@
     <dimen name="sign_in_row">16dp</dimen>
 
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="nav_header_vertical_spacing">16dp</dimen>
-    <dimen name="nav_header_height">160dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
 
     <!-- Nav Header -->
-    <dimen name="padding_big_menu">28dp</dimen>
-    <dimen name="padding_big_menu_vertical">8dp</dimen>
-    <dimen name="width_item_menu">30dp</dimen>
 
     <!-- Profil Activity -->
-    <dimen name="profil_upper_padding">16dp</dimen>
-    <dimen name="profil_picture">108dp</dimen>
 
     <!-- Sell Item Activity -->
     <dimen name="sell_padding_item_horizontal">16dp</dimen>
@@ -90,5 +75,4 @@
     <dimen name="indicator_small_size">32dp</dimen>
 
     <!-- Full width Button -->
-    <dimen name="full_button_padding_vertical">8dp</dimen>
 </resources>

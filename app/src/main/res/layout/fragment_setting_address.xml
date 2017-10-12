@@ -4,9 +4,7 @@
     android:layout_height="match_parent"
     tools:context=".fragments.settings.SettingAddressFragment">
 
-    <include
-        android:id="@+id/viewError"
-        layout="@layout/view_not_found" />
+    <include layout="@layout/view_not_found" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
