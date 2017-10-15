@@ -38,18 +38,21 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <FrameLayout
-            android:id="@+id/content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/loading"
+                style="@style/AppTheme.Indicator"/>
+        </FrameLayout>
     </android.support.v4.widget.NestedScrollView>
 
-    <!--<CustomComponents.AppBarLayout
-        android:id="@+id/bottomBar"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_gravity="bottom"
-        android:background="@color/cWhite"
-        android:padding="8dp">-->
 
     <CustomComponents.FrameLayout
         android:id="@+id/bottomBar"
@@ -63,6 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
             <CustomComponents.Button
                 android:id="@+id/mSaveDraft"
                 style="@style/AppTheme.ButtonFullWidth"

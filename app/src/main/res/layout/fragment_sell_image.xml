@@ -171,19 +171,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Ambil dari Kamera" />
+            android:text="Tambah gambar baru" />
 
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/padding_normal" />
-
-        <CustomComponents.Button
-            android:id="@+id/mUploadGallery"
-            style="@style/AppTheme.ButtonUINormal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Upload dari Galeri" />
     </LinearLayout>
 </LinearLayout>

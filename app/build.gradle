@@ -40,6 +40,7 @@ dependencies {
     compile 'com.google.firebase:firebase-auth:11.4.0'
     compile 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
     compile 'com.google.android.gms:play-services-auth:11.4.0'
+    compile 'com.google.android.gms:play-services-maps:11.4.0'
     compile 'com.facebook.android:facebook-login:[4,5)'
 }
 

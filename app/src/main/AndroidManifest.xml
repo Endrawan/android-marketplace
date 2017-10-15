@@ -15,6 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:node="merge">
+
+        <!-- Maps API -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- End Maps API -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -40,7 +48,6 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
         <activity android:name=".ProductsActivity" />
         <activity
             android:name=".ExampleActivity"
@@ -67,6 +74,7 @@
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name=".TransactionActivity" />
         <activity android:name=".ReviewActivity" />
+        <activity android:name=".LocationActivity"></activity>
     </application>
 
 </manifest>

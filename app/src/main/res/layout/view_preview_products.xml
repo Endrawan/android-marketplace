@@ -49,6 +49,7 @@
             android:id="@+id/RVProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/cBackgroundGrey"
             android:overScrollMode="never" />
 
         <com.wang.avi.AVLoadingIndicatorView
