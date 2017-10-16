@@ -84,8 +84,7 @@
                 <include
                     android:id="@+id/adv_large_2"
                     layout="@layout/view_adv_large" />
-
-
+                
                 <include
                     android:id="@+id/topOffers"
                     layout="@layout/view_preview_products" />
