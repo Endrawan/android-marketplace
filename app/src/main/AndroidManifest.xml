@@ -74,7 +74,9 @@
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name=".TransactionActivity" />
         <activity android:name=".ReviewActivity" />
-        <activity android:name=".LocationActivity"></activity>
+        <activity android:name=".LocationActivity" />
+        <activity android:name=".WishlistActivity" />
+        <activity android:name=".NotificationActivity"></activity>
     </application>
 
 </manifest>

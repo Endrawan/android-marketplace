@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    android:background="@color/cWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small">
+
+        <CustomComponents.TextView
+            style="@style/AppTheme.TextViewH3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_horizontal_small"
+            android:layout_marginRight="@dimen/margin_horizontal_small"
+            android:text="Kode Pembayaran: " />
+
+        <CustomComponents.TextView
+            android:id="@+id/orderCode"
+            style="@style/AppTheme.TextViewH3.Blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_horizontal_small"
+        android:layout_marginRight="@dimen/margin_horizontal_small"
+        android:background="@color/cBackgroundGrey" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_horizontal_small"
+        android:layout_marginRight="@dimen/margin_horizontal_small"
+        android:background="@color/cBackgroundGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small">
+
+        <CustomComponents.TextView
+            android:id="@+id/note"
+            style="@style/AppTheme.TextViewH7.Grey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Anda mesti memilih metode pembayaran terlebih dahulu" />
+
+        <View
+            android:layout_width="@dimen/padding_small"
+            android:layout_height="match_parent" />
+
+        <CustomComponents.Button
+            android:id="@+id/okButton"
+            style="@style/AppTheme.Button.Primary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Pilih metode bayar"
+            android:textAppearance="@style/AppTheme.TextViewH5.Light" />
+    </LinearLayout>
+
+</LinearLayout>

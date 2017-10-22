@@ -29,10 +29,13 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingLeft="56dp"
+            android:paddingStart="56dp"
             app:tabGravity="fill"
             app:tabIndicatorColor="@color/cWhite"
-            app:tabMode="fixed"
-            app:tabTextAppearance="@style/AppTheme.TextViewH4.Light" />
+            app:tabMode="scrollable"
+            app:tabTextAppearance="@style/AppTheme.TextViewH4.Light"/>
 
     </android.support.design.widget.AppBarLayout>
 
