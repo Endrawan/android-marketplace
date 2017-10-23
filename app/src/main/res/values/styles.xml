@@ -191,8 +191,15 @@
     </style>
 
     <style name="AppTheme.TextView.Toolbar" parent="AppTheme">
-        <item name="android:textAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title
+        <item name="android:textAppearance">@style/AppTheme.TextViewH3.Light
         </item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="AppTheme.TextView.Toolbar.Inverse" parent="AppTheme">
+        <item name="android:textAppearance">@style/AppTheme.TextViewH3</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>

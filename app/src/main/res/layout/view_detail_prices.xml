@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cWhite"
+        android:padding="@dimen/padding_normal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_camera_black_24dp"/>
+
+        <View
+            android:layout_width="@dimen/padding_horizontal_normal"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CustomComponents.TextViewSemiBold
+                style="@style/AppTheme.TextViewH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informasi Pembayaran"
+                android:layout_marginBottom="@dimen/margin_vertical_xsmall"/>
+
+            <LinearLayout
+                android:id="@+id/itemPrices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_vertical_xsmall">
+
+                <CustomComponents.TextViewSemiBold
+                    android:id="@+id/totalPrice"
+                    style="@style/AppTheme.TextViewH3.Primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/totalPrice"
+                    android:layout_toStartOf="@+id/totalPrice"
+                    android:text="Total Pesanan"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cBackgroundGrey"/>
+</LinearLayout>

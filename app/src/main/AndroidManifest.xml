@@ -76,7 +76,8 @@
         <activity android:name=".ReviewActivity" />
         <activity android:name=".LocationActivity" />
         <activity android:name=".WishlistActivity" />
-        <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".OrderDetailsActivity"></activity>
     </application>
 
 </manifest>

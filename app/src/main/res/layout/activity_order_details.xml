@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.endrawan.marketplace.OrderDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/cWhite"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <CustomComponents.TextView
+                style="@style/AppTheme.TextView.Toolbar.Inverse"
+                android:layout_gravity="start"
+                android:text="Rincian Pemesanan" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/status"
+                layout="@layout/view_detail_text"/>
+
+            <include
+                android:id="@+id/address"
+                layout="@layout/view_detail_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_vertical_normal"/>
+
+            <include
+                android:id="@+id/prices"
+                layout="@layout/view_detail_prices"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_vertical_normal"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading"
+        style="@style/AppTheme.Indicator"/>
+</android.support.design.widget.CoordinatorLayout>
