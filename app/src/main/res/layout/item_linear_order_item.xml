@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cWhite"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_horizontal_small"
+    android:paddingRight="@dimen/padding_horizontal_small">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:padding="@dimen/padding_small">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/storeImage"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <CustomComponents.TextView
+            android:id="@+id/subTotal"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical" />
+
+        <CustomComponents.TextView
+            android:id="@+id/storeName"
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/storeImage"
+            android:layout_toEndOf="@+id/storeImage"
+            android:layout_toLeftOf="@+id/subTotal"
+            android:layout_toStartOf="@+id/subTotal"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/padding_horizontal_small"
+            android:paddingRight="@dimen/padding_horizontal_small"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cBackgroundGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description" />
+
+        <View
+            android:layout_width="@dimen/margin_horizontal_small"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <CustomComponents.TextView
+                android:id="@+id/productName"
+                style="@style/AppTheme.TextViewH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CustomComponents.TextView
+                    android:id="@+id/productQuantity"
+                    style="@style/AppTheme.TextViewH4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/productQuantity"
+                    android:layout_toStartOf="@+id/productQuantity"
+                    android:orientation="horizontal">
+
+                    <CustomComponents.TextView
+                        android:id="@+id/beforeDiscPrice"
+                        style="@style/AppTheme.TextViewH4.Grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_horizontal_small"
+                        android:layout_marginEnd="@dimen/margin_horizontal_small"/>
+
+                    <CustomComponents.TextView
+                        android:id="@+id/realPrice"
+                        style="@style/AppTheme.TextViewH4.Primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cBackgroundGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small">
+
+        <CustomComponents.TextView
+            style="@style/AppTheme.TextViewH4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_vertical_xsmall"
+            android:text="Ongkos Kirim" />
+
+        <CustomComponents.TextView
+            android:id="@+id/shipmentPrice"
+            style="@style/AppTheme.TextViewH4.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cBackgroundGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_vertical_small"
+        android:paddingTop="@dimen/padding_vertical_small">
+
+        <CustomComponents.Button
+            android:id="@+id/callStore"
+            style="@style/AppTheme.Button.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Hubungi Penjual"
+            android:textAppearance="@style/AppTheme.TextViewH4.Primary" />
+
+        <View
+            android:layout_width="@dimen/padding_small"
+            android:layout_height="match_parent" />
+
+        <CustomComponents.Button
+            android:id="@+id/visitStore"
+            style="@style/AppTheme.Button.Primary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Kunjungi Toko"
+            android:textAppearance="@style/AppTheme.TextViewH4.Light" />
+    </LinearLayout>
+
+</LinearLayout>

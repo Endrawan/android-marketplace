@@ -2,13 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cWhite"
+    android:background="@color/cBackgroundGrey"
     tools:context=".fragments.TransactionFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cBackgroundGrey"/>
+        android:clipToPadding="false"
+        android:padding="@dimen/padding_small"/>
 
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading"
+        style="@style/AppTheme.Indicator"/>
 </FrameLayout>

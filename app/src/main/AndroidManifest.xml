@@ -72,7 +72,7 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name=".TransactionActivity" />
+        <activity android:name=".OrderActivity" />
         <activity android:name=".ReviewActivity" />
         <activity android:name=".LocationActivity" />
         <activity android:name=".WishlistActivity" />
