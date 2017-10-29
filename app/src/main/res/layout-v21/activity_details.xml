@@ -60,7 +60,8 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/cPrimaryTransparent" />
 
-    <CustomComponents.AppBarLayout
+    <CustomComponents.FrameLayout
+        android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_gravity="bottom"
@@ -92,7 +93,7 @@
                     android:layout_height="24dp"
                     android:layout_gravity="center"
                     app:indicatorColor="@color/cWhite"
-                    app:indicatorName="BallPulseSyncIndicator" />
+                    app:indicatorName="BallPulseIndicator" />
             </FrameLayout>
 
             <View
@@ -117,10 +118,10 @@
                     android:layout_height="24dp"
                     android:layout_gravity="center"
                     app:indicatorColor="@color/cWhite"
-                    app:indicatorName="BallPulseSyncIndicator" />
+                    app:indicatorName="BallPulseIndicator" />
             </FrameLayout>
 
         </LinearLayout>
-    </CustomComponents.AppBarLayout>
+    </CustomComponents.FrameLayout>
 
 </android.support.design.widget.CoordinatorLayout>

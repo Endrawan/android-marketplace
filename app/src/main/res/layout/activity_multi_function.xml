@@ -17,7 +17,8 @@
 
         <CustomComponents.TextView
             android:id="@+id/title"
-            style="@style/AppTheme.TextView.Toolbar" />
+            style="@style/AppTheme.TextView.Toolbar"
+            android:textAppearance="@style/AppTheme.TextViewH3"/>
     </android.support.v7.widget.Toolbar>
 
     <FrameLayout
