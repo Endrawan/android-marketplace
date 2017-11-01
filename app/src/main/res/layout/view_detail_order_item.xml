@@ -19,7 +19,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:src="@color/cGrey" />
+            android:src="@color/cGrey"/>
 
         <CustomComponents.TextView
             android:id="@+id/subTotal"
@@ -152,34 +152,12 @@
 
     <include
         android:id="@+id/steps"
-        layout="@layout/view_order_item_steps" />
+        layout="@layout/view_order_item_steps"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/cBackgroundGrey" />
-
-    <LinearLayout
-        android:id="@+id/confirmArrivedPanel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <CustomComponents.Button
-            android:id="@+id/confirmArrived"
-            style="@style/AppTheme.Button.Green"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_vertical_small"
-            android:layout_marginTop="@dimen/margin_vertical_small"
-            android:padding="@dimen/padding_small"
-            android:text="Konfirmasi Barang Sampai"
-            android:textAppearance="@style/AppTheme.TextViewH4.Light" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/cBackgroundGrey" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -194,7 +172,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Hubungi Penjual"
+            android:text="Hubungi Pembeli"
             android:textAppearance="@style/AppTheme.TextViewH4.Primary" />
 
         <View
@@ -207,7 +185,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Kunjungi Toko"
+            android:text="Profil Pembeli"
             android:textAppearance="@style/AppTheme.TextViewH4.Light" />
     </LinearLayout>
 

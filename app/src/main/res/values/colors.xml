@@ -16,6 +16,7 @@
     <color name="cBlack">#212121</color>
     <color name="cGrey">#9E9E9E</color>
     <color name="cGreen">#4CAF50</color>
+    <color name="cGreenDarker">#388E3C</color>
     <color name="cRed">#F44336</color>
     <color name="cBlue">#2196F3</color>
     <color name="cBorderBottom">#E0E0E0</color>

@@ -77,7 +77,8 @@
         <activity android:name=".LocationActivity" />
         <activity android:name=".WishlistActivity" />
         <activity android:name=".NotificationActivity" />
-        <activity android:name=".OrderDetailsActivity"></activity>
+        <activity android:name=".OrderDetailsActivity" />
+        <activity android:name=".SellingDetailsActivity"></activity>
     </application>
 
 </manifest>

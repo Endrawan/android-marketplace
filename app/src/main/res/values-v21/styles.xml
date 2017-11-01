@@ -54,6 +54,9 @@
     <style name="AppTheme.Button.Inverse" parent="AppTheme.Button">
         <item name="android:background">@drawable/button_inverse</item>
     </style>
+    <style name="AppTheme.Button.Green" parent="AppTheme.Button">
+        <item name="android:background">@drawable/button_green</item>
+    </style>
 
     <style name="AppTheme.Button.H5" parent="AppTheme.Button">
         <item name="android:textAppearance">@style/AppTheme.TextViewH5.Light</item>
