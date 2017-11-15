@@ -19,6 +19,8 @@
     <color name="cGreenDarker">#388E3C</color>
     <color name="cRed">#F44336</color>
     <color name="cBlue">#2196F3</color>
+    <color name="cOrange">#FF9800</color>
+    <color name="cYellow">#FFEB3B</color>
     <color name="cBorderBottom">#E0E0E0</color>
     <color name="popup_background">@color/cWhite</color>
 </resources>

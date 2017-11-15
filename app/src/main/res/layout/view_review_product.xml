@@ -30,42 +30,66 @@
             android:layout_width="match_parent"
             android:layout_height="192dp"
             android:orientation="horizontal">
-            <LinearLayout
+            <!-- TOTAL RATING SECTION -->
+            <FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:padding="@dimen/padding_large"
-                android:orientation="vertical">
+                android:layout_weight="1">
 
-                <CustomComponents.TextView
-                    style="@style/AppTheme.TextViewH3.Light"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/background_small_green"
-                    android:drawableRight="@drawable/ic_grade_white_24dp"
-                    android:drawableEnd="@drawable/ic_grade_white_24dp"
-                    android:drawablePadding="@dimen/padding_horizontal_small"
-                    android:padding="@dimen/padding_small"
-                    android:layout_gravity="center_horizontal"
-                    android:text="4.3"/>
-
-                <CustomComponents.TextView
-                    style="@style/AppTheme.TextViewH6.Grey"
+                <LinearLayout
+                    android:id="@+id/totalRatingSection"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/margin_vertical_normal"
-                    android:layout_marginBottom="@dimen/margin_vertical_normal"
-                    android:text="4 Reviews"/>
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_large"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <CustomComponents.TextView
+                        android:id="@+id/ratingVal"
+                        style="@style/AppTheme.TextViewH3.Light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_small_green"
+                        android:drawableRight="@drawable/ic_star_white_24dp"
+                        android:drawableEnd="@drawable/ic_star_white_24dp"
+                        android:drawablePadding="@dimen/padding_horizontal_small"
+                        android:padding="@dimen/padding_small"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <CustomComponents.TextView
+                        android:id="@+id/ratingCount"
+                        style="@style/AppTheme.TextViewH6.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_vertical_normal"
+                        android:layout_marginBottom="@dimen/margin_vertical_normal"/>
+
+                    <CustomComponents.TextView
+                        style="@style/AppTheme.TextViewH4.Blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Lihat Semua Review"/>
+                </LinearLayout>
 
                 <CustomComponents.TextView
-                    style="@style/AppTheme.TextViewH4.Blue"
+                    style="@style/AppTheme.TextViewH4"
+                    android:id="@+id/nullRating"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="Lihat Semua Review"/>
-            </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Belum ada rating untuk produk ini"/>
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/ratingLoading"
+                    style="@style/AppTheme.Indicator"/>
+            </FrameLayout>
+
+            <!-- END OF TOTAL RATING SECTION -->
 
             <View
                 android:layout_width="1dp"
@@ -125,36 +149,63 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/padding_vertical_small"
                 android:layout_marginBottom="@dimen/padding_vertical_small"
-                android:text="Top Review"/>
+                android:text="Review Terbaru"/>
 
-            <CustomComponents.TextView
-                style="@style/AppTheme.TextViewH4"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="product quality is not good"
-                android:layout_marginBottom="@dimen/margin_horizontal_xsmall"/>
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/latestReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
 
-            <CustomComponents.TextView
-                style="@style/AppTheme.TextViewH6.Grey"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="by Abhi on Jul 17, 2017"/>
+                    <CustomComponents.TextView
+                        android:id="@+id/reviewerName"
+                        style="@style/AppTheme.TextViewH4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_horizontal_xsmall"/>
 
-            <CustomComponents.TextView
-                style="@style/AppTheme.TextViewH5.Grey"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_vertical_small"
-                android:layout_marginBottom="@dimen/margin_vertical_small"
-                android:text="product quality is not too good"/>
+                    <CustomComponents.TextView
+                        android:id="@+id/reviewerDate"
+                        style="@style/AppTheme.TextViewH6.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
 
-            <CustomComponents.TextView
-                style="@style/AppTheme.TextViewH4.Blue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/padding_vertical_normal"
-                android:paddingBottom="@dimen/padding_vertical_normal"
-                android:text="Lihat Semua Review" />
+                    <CustomComponents.TextView
+                        android:id="@+id/reviewerReview"
+                        style="@style/AppTheme.TextViewH5.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_vertical_small"
+                        android:layout_marginBottom="@dimen/margin_vertical_small"/>
+
+                    <CustomComponents.TextView
+                        style="@style/AppTheme.TextViewH4.Blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_vertical_normal"
+                        android:paddingBottom="@dimen/padding_vertical_normal"
+                        android:text="Lihat Semua Review" />
+                </LinearLayout>
+
+                <CustomComponents.TextView
+                    style="@style/AppTheme.TextViewH4"
+                    android:id="@+id/nullLatestReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Belum ada review untuk produk ini"/>
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/latestReviewLoading"
+                    style="@style/AppTheme.Indicator"/>
+            </FrameLayout>
+
 
         </LinearLayout>
 

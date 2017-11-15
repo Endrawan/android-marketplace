@@ -46,7 +46,9 @@
 
             <include layout="@layout/view_protection_product"/>
 
-            <include layout="@layout/view_review_product"/>
+            <include
+                android:id="@+id/reviewsSection"
+                layout="@layout/view_review_product"/>
 
             <include
                 android:id="@+id/ownerSection"

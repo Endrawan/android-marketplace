@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/margin_vertical_small"
+    android:layout_marginTop="@dimen/margin_vertical_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_vertical_small"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rate1"
+            android:layout_width="@dimen/rating_star_size"
+            android:layout_height="@dimen/rating_star_size"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_star_grey_36dp" />
+
+        <View
+            android:layout_width="@dimen/margin_horizontal_small"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/rate2"
+            android:layout_width="@dimen/rating_star_size"
+            android:layout_height="@dimen/rating_star_size"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_star_grey_36dp" />
+
+        <View
+            android:layout_width="@dimen/margin_horizontal_small"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/rate3"
+            android:layout_width="@dimen/rating_star_size"
+            android:layout_height="@dimen/rating_star_size"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_star_grey_36dp" />
+
+        <View
+            android:layout_width="@dimen/margin_horizontal_small"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/rate4"
+            android:layout_width="@dimen/rating_star_size"
+            android:layout_height="@dimen/rating_star_size"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_star_grey_36dp" />
+
+        <View
+            android:layout_width="@dimen/margin_horizontal_small"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/rate5"
+            android:layout_width="@dimen/rating_star_size"
+            android:layout_height="@dimen/rating_star_size"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_star_grey_36dp" />
+    </LinearLayout>
+
+    <CustomComponents.TextView
+        android:id="@+id/ratingText"
+        style="@style/AppTheme.TextViewH6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"/>
+</LinearLayout>

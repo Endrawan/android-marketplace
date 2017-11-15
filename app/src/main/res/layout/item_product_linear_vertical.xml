@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_small_green"
-                android:drawableEnd="@drawable/ic_grade_white_8dp"
+                android:drawableEnd="@drawable/ic_star_white_8dp"
                 android:drawablePadding="@dimen/margin_horizontal_xsmall"
                 android:paddingBottom="@dimen/padding_vertical_xxsmall"
                 android:paddingLeft="@dimen/padding_horizontal_xsmall"
