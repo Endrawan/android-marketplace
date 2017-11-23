@@ -4,7 +4,7 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.endrawan.marketplace.AuthActivity">
+    tools:context=".activities.AuthActivity">
 
     <FrameLayout
         android:id="@+id/fragmentContainer"
