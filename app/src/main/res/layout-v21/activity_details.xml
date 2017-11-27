@@ -7,21 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".activities.DetailsActivity">
 
-    <android.support.v4.widget.NestedScrollView
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:overScrollMode="never"
-        android:clipToPadding="false"
-        android:paddingBottom="64dp">
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
 
-        <LinearLayout
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@color/cWhite"
+            app:contentScrim="@color/cWhite"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <FrameLayout
+                android:id="@+id/containerBanner"
                 android:layout_width="match_parent"
-                android:layout_height="400dp">
+                android:layout_height="360dp">
 
                 <android.support.v4.view.ViewPager
                     android:id="@+id/productImages"
@@ -29,12 +36,43 @@
                     android:layout_height="match_parent"
                     android:transitionName="product" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_header_mask"/>
+
                 <me.relex.circleindicator.CircleIndicator
                     android:id="@+id/indicator"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:layout_gravity="bottom" />
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp" />
             </FrameLayout>
+
+            <!--toolbar-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="64dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <include
                 android:id="@+id/headerSection"
@@ -44,23 +82,17 @@
                 android:id="@+id/detailsSection"
                 layout="@layout/view_details_product" />
 
-            <include layout="@layout/view_protection_product"/>
+            <include layout="@layout/view_protection_product" />
 
             <include
                 android:id="@+id/reviewsSection"
-                layout="@layout/view_review_product"/>
+                layout="@layout/view_review_product" />
 
             <include
                 android:id="@+id/ownerSection"
-                layout="@layout/view_owner_product"/>
+                layout="@layout/view_owner_product" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/cPrimaryTransparent" />
 
     <CustomComponents.FrameLayout
         android:id="@+id/bottomBar"
