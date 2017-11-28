@@ -39,7 +39,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginEnd="@dimen/margin_horizontal_normal"
                     android:layout_marginRight="@dimen/margin_horizontal_normal"
-                    android:src="@drawable/ic_amex"/>
+                    android:src="@drawable/ic_amex"
+                    android:transitionName="profileImage"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
