@@ -100,13 +100,13 @@
                     android:layout_toStartOf="@+id/productQuantity"
                     android:orientation="horizontal">
 
-                    <CustomComponents.TextView
+                    <!--<CustomComponents.TextView
                         android:id="@+id/beforeDiscPrice"
                         style="@style/AppTheme.TextViewH4.Grey"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/margin_horizontal_small"
-                        android:layout_marginRight="@dimen/margin_horizontal_small" />
+                        android:layout_marginRight="@dimen/margin_horizontal_small" />-->
 
                     <CustomComponents.TextView
                         android:id="@+id/realPrice"

@@ -109,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:textSize="32sp"
-                    android:text="3"/>
+                    android:text="0"/>
 
                 <CustomComponents.TextView
                     style="@style/AppTheme.TextViewH6.Grey"
@@ -209,7 +209,7 @@
 
         </LinearLayout>
 
-        <View
+        <!--<View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/cBackgroundGrey"/>
@@ -254,7 +254,7 @@
                 android:paddingBottom="@dimen/padding_vertical_normal"
                 android:text="@string/details_label_moreqanda" />
 
-        </LinearLayout>
+        </LinearLayout>-->
 
     </LinearLayout>
 

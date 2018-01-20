@@ -15,16 +15,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/content_description"
-            android:transitionName="@string/product_transition"/>
+            android:transitionName="@string/product_transition" />
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/wishlist"
             android:layout_width="16dp"
             android:layout_height="16dp"
             android:layout_gravity="end|top"
             android:layout_margin="@dimen/margin_small"
             android:contentDescription="@string/content_description"
-            android:src="@drawable/heart_unavailable" />
+            android:src="@drawable/heart_unavailable" />-->
 
         <CustomComponents.TextView
             android:id="@+id/discountPercent"
@@ -54,21 +54,29 @@
             android:gravity="center_vertical"
             android:maxLines="2" />
 
-        <CustomComponents.TextViewSemiBold
-            android:id="@+id/realPrice"
-            style="@style/AppTheme.TextViewH4"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_vertical_small" />
+            android:layout_marginBottom="@dimen/margin_vertical_small"
+            android:layout_marginTop="@dimen/margin_vertical_small"
+            android:orientation="vertical">
 
-        <CustomComponents.TextView
-            android:id="@+id/beforeDiscPrice"
-            style="@style/AppTheme.TextViewH6.Grey"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_vertical_small" />
+            <CustomComponents.TextViewSemiBold
+                android:id="@+id/realPrice"
+                style="@style/AppTheme.TextViewH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CustomComponents.TextView
+                android:id="@+id/beforeDiscPrice"
+                style="@style/AppTheme.TextViewH6.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ratingSection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"

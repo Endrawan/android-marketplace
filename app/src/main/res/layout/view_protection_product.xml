@@ -24,7 +24,7 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/trash"
+                android:src="@drawable/ic_like_black_24dp"
                 android:tint="@color/cGrey"
                 android:layout_marginBottom="@dimen/margin_vertical_small"
                 android:contentDescription="@string/content_description"/>
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Produk Terverifikasi"/>
+                android:text="Kenyamanan Pengguna"/>
         </LinearLayout>
 
         <View
@@ -54,7 +54,7 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/trash"
+                android:src="@drawable/ic_moreship_black_24dp"
                 android:tint="@color/cGrey"
                 android:layout_marginBottom="@dimen/margin_vertical_small"
                 android:contentDescription="@string/content_description"/>
@@ -64,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Produk Terverifikasi"/>
+                android:text="Berbagai Kurir Pengirim"/>
         </LinearLayout>
 
         <View
@@ -83,7 +83,7 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/trash"
+                android:src="@drawable/ic_safepay_black_24dp"
                 android:tint="@color/cGrey"
                 android:layout_marginBottom="@dimen/margin_vertical_small"
                 android:contentDescription="@string/content_description"/>
@@ -93,7 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Produk Terverifikasi"/>
+                android:text="Midtrans Safe Payment"/>
         </LinearLayout>
     </LinearLayout>
 

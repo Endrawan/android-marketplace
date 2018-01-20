@@ -45,8 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clipToPadding="false"
-            android:paddingBottom="480dp">
-
+            android:paddingBottom="64dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -88,6 +87,14 @@
                 <include
                     android:id="@+id/topOffers"
                     layout="@layout/view_preview_products" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_vertical_small" />
+
+                <include
+                    android:id="@+id/specialProducts"
+                    layout="@layout/view_special_products" />
 
             </LinearLayout>
 

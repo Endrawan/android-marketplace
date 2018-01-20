@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/sign_in_horizontal_margin"
     android:paddingRight="@dimen/sign_in_horizontal_margin"
     android:paddingTop="@dimen/sign_in_vertical_margin"
-    tools:context=".SignInActivity">
+    tools:context=".activities.AuthActivity">
 
     <ImageView
         android:layout_width="128dp"
@@ -23,19 +23,19 @@
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
-        <CustomComponents.FacebookButton
+        <!--<CustomComponents.FacebookButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/facebook_logo"
             android:drawableStart="@drawable/facebook_logo"
-            android:text="@string/sign_in_facebook" />
+            android:text="@string/sign_in_facebook" />-->
 
-        <CustomComponents.TextView
+        <!--<CustomComponents.TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/sign_in_row"
-            android:text="@string/sign_in_or" />
+            android:text="@string/sign_in_or" />-->
 
         <CustomComponents.EditText
             android:id="@+id/mUsername"

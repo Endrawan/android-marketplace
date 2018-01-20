@@ -79,7 +79,8 @@
         <activity android:name=".activities.NotificationActivity" />
         <activity android:name=".activities.OrderDetailsActivity" />
         <activity android:name=".activities.SellingDetailsActivity" />
-        <activity android:name=".activities.SellerActivity"></activity>
+        <activity android:name=".activities.SellerActivity" />
+        <activity android:name=".activities.SplashScreenActivity"></activity>
     </application>
 
 </manifest>

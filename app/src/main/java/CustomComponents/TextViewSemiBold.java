@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 /**
  * Endrawan made this on 2017-07-21.
  */
-public class TextViewSemiBold extends android.widget.TextView {
+public class TextViewSemiBold extends TextView {
     public TextViewSemiBold(Context context) {
         super(context);
         init();

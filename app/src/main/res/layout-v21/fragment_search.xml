@@ -60,17 +60,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:layout_toStartOf="@+id/recentEdit"
                         android:text="@string/search_label_recent"
                         android:textAllCaps="true" />
 
-                    <CustomComponents.TextView
+                    <!--<CustomComponents.TextView
                         android:id="@+id/recentEdit"
                         style="@style/AppTheme.TextViewH4.Primary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:text="@string/search_button_edit" />
+                        android:text="@string/search_button_edit" />-->
                 </RelativeLayout>
 
                 <android.support.v7.widget.RecyclerView
@@ -84,7 +83,7 @@
                     android:paddingRight="@dimen/padding_horizontal_normal" />
             </LinearLayout>
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/cWhite"
@@ -102,7 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-            </LinearLayout>
+            </LinearLayout>-->
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

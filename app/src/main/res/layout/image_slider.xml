@@ -23,7 +23,7 @@
             android:layout_alignParentBottom="true" />
     </RelativeLayout>
 
-    <HorizontalScrollView
+    <!--<HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="112dp"
         android:background="@color/cWhite">
@@ -86,5 +86,5 @@
 
             </LinearLayout>
         </LinearLayout>
-    </HorizontalScrollView>
+    </HorizontalScrollView>-->
 </LinearLayout>

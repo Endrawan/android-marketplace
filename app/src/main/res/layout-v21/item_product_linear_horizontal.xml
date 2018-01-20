@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="128dp"
+    android:layout_width="150dp"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/margin_small"
     android:background="@color/cWhite"
@@ -8,7 +8,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="128dp">
+        android:layout_height="150dp">
 
         <ImageView
             android:id="@+id/image"
@@ -17,14 +17,14 @@
             android:contentDescription="@string/content_description"
             android:transitionName="@string/product_transition"/>
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/wishlist"
             android:layout_width="16dp"
             android:layout_height="16dp"
             android:layout_gravity="end|top"
             android:layout_margin="@dimen/margin_small"
             android:contentDescription="@string/content_description"
-            android:src="@drawable/heart_unavailable" />
+            android:src="@drawable/heart_unavailable" />-->
 
         <CustomComponents.TextView
             android:id="@+id/discountPercent"
@@ -50,7 +50,9 @@
             android:id="@+id/realPrice"
             style="@style/AppTheme.TextViewH4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"/>
 
         <CustomComponents.TextView
             android:id="@+id/beforeDiscPrice"

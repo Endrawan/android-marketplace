@@ -21,6 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:ellipsize="end"
         tools:text="samsung earphone" />
 
 </LinearLayout>

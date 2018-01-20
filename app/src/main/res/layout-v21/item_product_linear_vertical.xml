@@ -28,14 +28,14 @@
                 android:contentDescription="@string/content_description"
                 android:transitionName="@string/product_transition" />
 
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/wishlist"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_gravity="end|top"
                 android:layout_margin="@dimen/margin_small"
                 android:contentDescription="@string/content_description"
-                android:src="@drawable/heart_unavailable" />
+                android:src="@drawable/heart_unavailable" />-->
 
             <CustomComponents.TextView
                 android:id="@+id/discountPercent"
