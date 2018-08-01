@@ -1,2 +1,2 @@
 # Marketplace Android
-Marketplace in progress...
+Marketplace untuk platform Android
